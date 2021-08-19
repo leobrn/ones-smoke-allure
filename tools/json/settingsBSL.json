@@ -1,0 +1,22 @@
+{
+    "$schema": "https://1c-syntax.github.io/bsl-language-server/configuration/schema.json",
+    "language": "ru",
+    "codeLens": {
+        "showCognitiveComplexity": false,
+        "showCyclomaticComplexity": false
+    },
+    "diagnostics": {
+        "computeTrigger": "onSave",
+        "skipSupport": "never",
+        "parameters": {
+            "LineLength": {
+                "maxLineLength": 150
+            },
+            "MissingReturnedValueDescription": false,
+            "MissingParameterDescription": false,
+            "MissingVariablesDescription": false
+        }
+    },
+    "traceLog": null,
+    "configurationRoot": "src"
+}

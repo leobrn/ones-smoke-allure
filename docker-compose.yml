@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  allure:
+    image: solutis/allure
+    restart: 'no'
+    container_name: 'smoke_allure'
+    volumes:
+      - ./allure:/home/allure
+    ports:
+      - 5050:8080
+    command: bash -c "allure generate /home/allure/syntax-check /home/allure/smoke -c -o /home/allure/report && allure open -p 8080 /home/allure/report"

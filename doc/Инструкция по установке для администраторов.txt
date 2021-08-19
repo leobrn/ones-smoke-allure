@@ -1,0 +1,39 @@
+*Установка выполняется под администратором
+*Переменные среды можете указать интерактивно
+*После добавления в переменную среды не забывайте перезапускать командную строку
+
+0) Установка GIT (опционально)
+	- Выполнить команду git clone https://github.com/leobrn/ones-smoke-allure.git
+		или скачать архив https://github.com/leobrn/ones-smoke-allure/archive/refs/heads/main.zip
+
+1) Скачать VS Code https://code.visualstudio.com/
+	или notepad++
+
+2) Установка JDK
+	- Ссылка для скачивания: https://adoptopenjdk.net/ 
+	- Для проверки в командой строки: java --version
+	- Если командна не найдено то нужно добавить в переменную среды
+		Узнать путь в командой строке: where java (копируем первую строку)
+
+3) Установка Allure
+	- Ссылка для скачивания: https://github.com/allure-framework/allure2/releases (zip архив)
+	- Распакуем в папку C:\tools (для примера), переименовываем папку на "allure"
+	- Добавить в переменную среды C:\tools\allure\bin
+	- Для проверки в командой строки: allure
+	
+4) Установка OneScript
+	- Ссылка для скачивания: https://oscript.io/
+	- Для проверки в командой строки: oscript --version
+	- Если командна не найдено то нужно добавить в переменную среды C:\Program Files\OneScript\bin\ 
+
+5) Обновляем библиотеки OneScript и скачиваем vanessa-runner (можно воспользоваться командой installVA.cmd)
+	В командой строке выполняем:
+	- opm update --all
+	- opm install vanessa-runner
+		Для проверки в командой строке: vrunner
+	- opm install add
+
+6) Выполнить команду replaceVA.cmd (проверьте пути в команде). Если через команду не хватит прав, выполните замену руками.
+
+7) Для пользователя под которым идет запуск тестов отключить защиту от опасных действий
+	- Расположение обработки: C:\Program Files\OneScript\lib\add\xddTestRunner.epf (ваш путь может отличаться)

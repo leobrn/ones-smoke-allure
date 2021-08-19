@@ -1,0 +1,16 @@
+dist
+build/**
+
+allure/report/
+allure/history/**
+allure/smoke/**
+allure/syntax-check/**
+base/**
+tests/smoke/**
+tools/epf/utils/**
+
+!.gitkeep
+resetBranch.cmd
+decompileEpf.cmd
+
+
