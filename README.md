@@ -1,8 +1,8 @@
 # Дымовые тесты для 1С и вывод результата в отчет Allure
 
-Сборка создана для инструмента <a href="https://github.com/vanessa-opensource/add" target="_blank">Vanessa ADD</a>.
+Сборка создана для инструмента <a href="https://github.com/vanessa-opensource/add" target="_blank">Vanessa-ADD</a>.
 
-Доработан инструмен по управлению дымовыми тестами, изменен ряд тестов.
+Доработан инструмент по управлению дымовыми тестами, изменен ряд тестов.
 
 [![telegram](https://img.shields.io/badge/telegram-chat-green.svg)](http://t.me/ovmst)
 
@@ -32,7 +32,7 @@
 
 ## Проблема
 
-В Vanessa ADD нет возможности автоматический отобрать объекты доработанные в расширении для тестирования. Нужно руками помечать ненужные объекты в исключения.
+В Vanessa-ADD нет возможности автоматический отобрать объекты, доработанные в расширении для тестирования. Нужно руками помечать ненужные объекты в исключения.
 
 Представим. Есть среднестатистический 1С франчайзи с проектным отделом. В котором есть 4 консультанта и 4 программиста. Есть небольшие проекты и ряд небольших клиентов на постоянной поддержке.
 
@@ -61,7 +61,7 @@
 
 <a id="markdown-дымовые-тесты" name="#дымовые-тесты"></a>
 
-Добавлена команда `Исключить объекты не используемые в расширение`.
+Добавлена команда `Исключить объекты, не используемые в расширение`.
 
 Доступны 4 вклакди:
 
@@ -69,16 +69,16 @@
 - `Проведение и печатные формы` - добавленная. Задается количество документов для проведения, количество документов для проверки печатных форм. Добавляются в исключения нужные документы, отдельно для проведения и печатных форм
 - `Макеты СКД` - добавленная. Можно добавить в исключения общий макет или объект, макеты которого не будут проверяться
 - `Доп. настройки` - добавленная
-  - `Закрывать модальные окна` - <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BE%D0%BA%D0%BD%D0%B0%D0%BC%D0%B8" target="_blank">офицальное описание</a>. В файл добавляется настройка из примера в описание
-  - `Тестирование командного интерфейса` - включить использование тестов командного интерфейса. В исключения по объектам попадают объекты указанные на вкладке `Открытие форм` в группах `Существующие`
+  - `Закрывать модальные окна` - <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BE%D0%BA%D0%BD%D0%B0%D0%BC%D0%B8" target="_blank">официальное описание</a>. В файл добавляется настройка из примера в описание
+  - `Тестирование командного интерфейса` - включить использование тестов командного интерфейса. В исключения по объектам попадают объекты, указанные на вкладке `Открытие форм` в группах `Существующие`
 
 ## Дымовые тесты
 
 <a id="markdown-синтаксическая-проверка" name="#синтаксическая-проверка"></a>
 
-- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke" target="_blank">Офицальная документация по дымовым тестам</a>
+- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke" target="_blank">Официальная документация по дымовым тестам</a>
 
-Если нужна авторизация в клиенте тестирования, добавтье в `xunit` ключ `--testclient`. Если версия `Vanessa ADD` меньше `6.7.0` замените плагины в корне библиотеки `C:\Program Files\OneScript\lib\add\` на плагины из папки `plugins`.
+Если нужна авторизация в клиенте тестирования, добавьте в `xunit` ключ `--testclient`. Если версия `Vanessa-ADD` меньше `6.7.0`, замените плагины в библиотеке `C:\Program Files\OneScript\lib\add\plugins` на плагины из папки `plugins`.
 
 ```json
 {
@@ -97,7 +97,7 @@
 ```json
 {
   "default": {
-    "--ibconnection": "/Sservername\basename"
+    "--ibconnection": "/Sservername\\basename"
   }
 }
 ```
@@ -106,19 +106,19 @@
 
 <a id="markdown-открытие-форм" name="#открытие-форм"></a>
 
-- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D0%B4%D1%8B%D0%BC%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F-%D1%84%D0%BE%D1%80%D0%BC-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B8-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" target="_blank">Офицальное описание</a>
+- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D0%B4%D1%8B%D0%BC%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F-%D1%84%D0%BE%D1%80%D0%BC-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B8-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" target="_blank">официальное описание</a>
 
 ### Командный интерфейс
 
 <a id="markdown-командный-интерфейс" name="#командный-интерфейс"></a>
 
-- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D0%B4%D1%8B%D0%BC%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%B0" target="_blank">Офицальное описание</a>
+- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D0%B4%D1%8B%D0%BC%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%B0" target="_blank">официальное описание</a>
 
 ### Проведение документов
 
 <a id="markdown-проведение-документов" name="#проведение-документов"></a>
 
-- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2" target="_blank">Офицальное описание</a>
+- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2" target="_blank">официальное описание</a>
 
 Доработано:
 
@@ -129,7 +129,7 @@
 
 <a id="markdown-проверка-макетов-скд" name="#проверка-макетов-скд"></a>
 
-- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D1%81%D0%BA%D0%B4" target="_blank">Офицальное описание</a>
+- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D1%81%D0%BA%D0%B4" target="_blank">официальное описание</a>
 
 Доработано:
 
@@ -140,7 +140,7 @@
 
 <a id="markdown-формирование-печатных-форм" name="#формирование-печатных-форм"></a>
 
-- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D1%8B%D1%85-%D1%84%D0%BE%D1%80%D0%BC-%D0%B4%D0%BB%D1%8F-%D0%B1%D1%81%D0%BF-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%B9" target="_blank">Офицальное описание</a>
+- <a href="https://github.com/vanessa-opensource/add/tree/develop/tests/smoke#%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D1%8B%D1%85-%D1%84%D0%BE%D1%80%D0%BC-%D0%B4%D0%BB%D1%8F-%D0%B1%D1%81%D0%BF-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%B9" target="_blank">официальное описание</a>
 
 Доработано:
 
@@ -178,8 +178,8 @@
 
 ## Описание команд
 
-- `installVA.cmd` - обновление пакетов onescript, установка vanessa-runner и add
-- `replaceVA.cmd` - собирает обработки из изсходников и делает замену обработок xddTestRunner.epf (из ветки develop), УправлениеДымовымиТестами и плагинов (из ветки develop) в корне библиотеки add
+- `installVA.cmd` - обновление пакетов onescript, установка vanessa-runner и vanessa-add
+- `replaceVA.cmd` - собирает обработки из исходников и делает замену обработок xddTestRunner.epf (из ветки develop), УправлениеДымовымиТестами и плагинов (из ветки develop) в корне библиотеки vanessa-add
 - `runSyntax.cmd` - запуск синтаксической проверки
 - `runSmoke.cmd` - запуск дымовых тестов
 - `runAllure.cmd` - формирование отчета Allure. Предусмотрено сохранение истории
@@ -191,7 +191,7 @@
 
 <a id="markdown-доп-материалы" name="#доп-материалы"></a>
 
-Для быстрой проверки кода можете использовть простой инструмен <a href="https://github.com/otymko/phoenixbsl" target="_blank">Phoenix BSL</a>.
+Для быстрой проверки кода можете использовть простой инструмент <a href="https://github.com/otymko/phoenixbsl" target="_blank">Phoenix BSL</a>.
 
 В каталоге `tools/json` расположен файл с настройками `settingsBSL.json`.
 
