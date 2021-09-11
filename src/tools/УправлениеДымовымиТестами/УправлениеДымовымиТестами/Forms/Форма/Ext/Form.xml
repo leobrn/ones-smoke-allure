@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ДеревоМетаданныхЗаполнитьДеревоМетаданных" id="35">
@@ -31,17 +31,23 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<Pages name="СтраницыОбработки" id="74">
+		<Pages name="СтраницыТестов" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы тестов</v8:content>
+				</v8:item>
+			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Страницы обработки</v8:content>
+					<v8:content>Страницы тестов</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="СтраницыОбработкиРасширеннаяПодсказка" id="75"/>
+			<ExtendedTooltip name="СтраницыТестовРасширеннаяПодсказка" id="75"/>
 			<ChildItems>
 				<Page name="СтраницаОткрытиеФорм" id="76">
 					<Title>
@@ -58,34 +64,34 @@
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаОткрытиеФормРасширеннаяПодсказка" id="77"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаНастройкиФорм" id="188">
+						<UsualGroup name="НастройкиОткрытиеФорм" id="78">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройки форм</v8:content>
+									<v8:content>Настройки открытие форм</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройки форм</v8:content>
+									<v8:content>Настройки открытие форм</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНастройкиФормРасширеннаяПодсказка" id="189"/>
+							<ExtendedTooltip name="НастройкиОткрытиеФормРасширеннаяПодсказка" id="79"/>
 							<ChildItems>
-								<CheckBoxField name="ТестированиеОткрытиеФорм" id="182">
-									<DataPath>ТестированиеОткрытиеФорм</DataPath>
+								<CheckBoxField name="ТестироватьОткрытиеФорм" id="80">
+									<DataPath>ТестироватьОткрытиеФорм</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТестированиеОткрытиеФормКонтекстноеМеню" id="183"/>
-									<ExtendedTooltip name="ТестированиеОткрытиеФормРасширеннаяПодсказка" id="184"/>
+									<ContextMenu name="ТестироватьОткрытиеФормКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ТестироватьОткрытиеФормРасширеннаяПодсказка" id="82"/>
 								</CheckBoxField>
-								<CheckBoxField name="ОткрываемФормыНаКлиентеТестирования" id="185">
+								<CheckBoxField name="ОткрыватьФормыНаКлиентеТестирования" id="83">
 									<DataPath>ОткрываемФормыНаКлиентеТестирования</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОткрываемФормыНаКлиентеТестированияКонтекстноеМеню" id="186"/>
-									<ExtendedTooltip name="ОткрываемФормыНаКлиентеТестированияРасширеннаяПодсказка" id="187"/>
+									<ContextMenu name="ОткрыватьФормыНаКлиентеТестированияКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ОткрыватьФормыНаКлиентеТестированияРасширеннаяПодсказка" id="85"/>
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
@@ -97,12 +103,11 @@
 							<SearchOnInput>Use</SearchOnInput>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>ДеревоМетаданных</DataPath>
 							<CommandSet>
-								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
 								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
 							</CommandSet>
 							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<SearchControlLocation>None</SearchControlLocation>
@@ -201,7 +206,6 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>ЗначенияРеквизитовНовых</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ЗначенияРеквизитовНовыхКонтекстноеМеню" id="43"/>
@@ -271,11 +275,11 @@
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="СтраницаПроведениеПечатныеФормы" id="89">
+				<Page name="СтраницаПроведениеПечатныеФормы" id="124">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проведение и печатные формы</v8:content>
+							<v8:content>Проведение печатные формы</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -284,9 +288,9 @@
 							<v8:content>Страница проведение печатные формы</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаПроведениеПечатныеФормыРасширеннаяПодсказка" id="90"/>
+					<ExtendedTooltip name="СтраницаПроведениеПечатныеФормыРасширеннаяПодсказка" id="125"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаНастройкиПроведениеПечатныеФормы" id="113">
+						<UsualGroup name="НастройкиПроведениеПечатныеФормы" id="126">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -296,25 +300,18 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройки проведение печатные формы</v8:content>
+									<v8:content>Настройки проведение печатные формы</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
-							<ExtendedTooltip name="ГруппаНастройкиПроведениеПечатныеФормыРасширеннаяПодсказка" id="114"/>
+							<ExtendedTooltip name="НастройкиПроведениеПечатныеФормыРасширеннаяПодсказка" id="127"/>
 							<ChildItems>
-								<CheckBoxField name="ТестированиеПроведение" id="173">
-									<DataPath>ТестированиеПроведение</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Тестировать проведение</v8:content>
-										</v8:item>
-									</Title>
+								<CheckBoxField name="ТестироватьПроведение" id="128">
+									<DataPath>ТестироватьПроведение</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТестированиеПроведениеКонтекстноеМеню" id="174"/>
-									<ExtendedTooltip name="ТестированиеПроведениеРасширеннаяПодсказка" id="175"/>
+									<ContextMenu name="ТестироватьПроведениеКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ТестироватьПроведениеРасширеннаяПодсказка" id="130"/>
 								</CheckBoxField>
-								<InputField name="КоличествоДокументовПроведение" id="118">
+								<InputField name="КоличествоДокументовПроведение" id="131">
 									<DataPath>КоличествоДокументовПроведение</DataPath>
 									<Title>
 										<v8:item>
@@ -322,22 +319,16 @@
 											<v8:content>Проводить документов</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="КоличествоДокументовПроведениеКонтекстноеМеню" id="119"/>
-									<ExtendedTooltip name="КоличествоДокументовПроведениеРасширеннаяПодсказка" id="120"/>
+									<ContextMenu name="КоличествоДокументовПроведениеКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="КоличествоДокументовПроведениеРасширеннаяПодсказка" id="133"/>
 								</InputField>
-								<CheckBoxField name="ТестированиеПечатныхФорм" id="176">
-									<DataPath>ТестированиеПечатныхФорм</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Тестировать печатные формы</v8:content>
-										</v8:item>
-									</Title>
+								<CheckBoxField name="ТестироватьПечатныеФормы" id="134">
+									<DataPath>ТестироватьПечатныеФормы</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТестированиеПечатныхФормКонтекстноеМеню" id="177"/>
-									<ExtendedTooltip name="ТестированиеПечатныхФормРасширеннаяПодсказка" id="178"/>
+									<ContextMenu name="ТестироватьПечатныеФормыКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ТестироватьПечатныеФормыРасширеннаяПодсказка" id="136"/>
 								</CheckBoxField>
-								<InputField name="КоличествоДокументовПечатныеФормы" id="115">
+								<InputField name="КоличествоДокументовПечатныеФормы" id="137">
 									<DataPath>КоличествоДокументовПечатныеФормы</DataPath>
 									<Title>
 										<v8:item>
@@ -345,14 +336,13 @@
 											<v8:content>Открывать печатные формы документов</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="КоличествоДокументовПечатныеФормыКонтекстноеМеню" id="116"/>
-									<ExtendedTooltip name="КоличествоДокументовПечатныеФормыРасширеннаяПодсказка" id="117"/>
+									<ContextMenu name="КоличествоДокументовПечатныеФормыКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="КоличествоДокументовПечатныеФормыРасширеннаяПодсказка" id="139"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<Table name="ТаблицаДокументы" id="91">
+						<Table name="ТаблицаДокументы" id="140">
 							<Representation>List</Representation>
-							<ChangeRowSet>false</ChangeRowSet>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<SearchOnInput>Use</SearchOnInput>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -361,138 +351,121 @@
 							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<SearchControlLocation>CommandBar</SearchControlLocation>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТаблицаДокументыКонтекстноеМеню" id="92"/>
-							<AutoCommandBar name="ТаблицаДокументыКоманднаяПанель" id="93">
+							<ContextMenu name="ТаблицаДокументыКонтекстноеМеню" id="141"/>
+							<AutoCommandBar name="ТаблицаДокументыКоманднаяПанель" id="142">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ТаблицаДокументыРасширеннаяПодсказка" id="94"/>
-							<SearchStringAddition name="ТаблицаДокументыСтрокаПоиска" id="95">
+							<ExtendedTooltip name="ТаблицаДокументыРасширеннаяПодсказка" id="143"/>
+							<SearchStringAddition name="ТаблицаДокументыСтрокаПоиска" id="144">
 								<AdditionSource>
 									<Item>ТаблицаДокументы</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаДокументыСтрокаПоискаКонтекстноеМеню" id="96"/>
-								<ExtendedTooltip name="ТаблицаДокументыСтрокаПоискаРасширеннаяПодсказка" id="97"/>
+								<ContextMenu name="ТаблицаДокументыСтрокаПоискаКонтекстноеМеню" id="145"/>
+								<ExtendedTooltip name="ТаблицаДокументыСтрокаПоискаРасширеннаяПодсказка" id="146"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ТаблицаДокументыСостояниеПросмотра" id="98">
+							<ViewStatusAddition name="ТаблицаДокументыСостояниеПросмотра" id="147">
 								<AdditionSource>
 									<Item>ТаблицаДокументы</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаДокументыСостояниеПросмотраКонтекстноеМеню" id="99"/>
-								<ExtendedTooltip name="ТаблицаДокументыСостояниеПросмотраРасширеннаяПодсказка" id="100"/>
+								<ContextMenu name="ТаблицаДокументыСостояниеПросмотраКонтекстноеМеню" id="148"/>
+								<ExtendedTooltip name="ТаблицаДокументыСостояниеПросмотраРасширеннаяПодсказка" id="149"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ТаблицаДокументыУправлениеПоиском" id="101">
+							<SearchControlAddition name="ТаблицаДокументыУправлениеПоиском" id="150">
 								<AdditionSource>
 									<Item>ТаблицаДокументы</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаДокументыУправлениеПоискомКонтекстноеМеню" id="102"/>
-								<ExtendedTooltip name="ТаблицаДокументыУправлениеПоискомРасширеннаяПодсказка" id="103"/>
+								<ContextMenu name="ТаблицаДокументыУправлениеПоискомКонтекстноеМеню" id="151"/>
+								<ExtendedTooltip name="ТаблицаДокументыУправлениеПоискомРасширеннаяПодсказка" id="152"/>
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnActivateRow">ТаблицаДокументыПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="ТаблицаДокументыИмяМетаданного" id="104">
+								<InputField name="ТаблицаДокументыИмяМетаданного" id="153">
 									<DataPath>ТаблицаДокументы.ИмяМетаданного</DataPath>
 									<ReadOnly>true</ReadOnly>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Исключаемые из проверки документы</v8:content>
-										</v8:item>
-									</Title>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаДокументыИмяМетаданногоКонтекстноеМеню" id="105"/>
-									<ExtendedTooltip name="ТаблицаДокументыИмяМетаданногоРасширеннаяПодсказка" id="106"/>
+									<ContextMenu name="ТаблицаДокументыИмяМетаданногоКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ТаблицаДокументыИмяМетаданногоРасширеннаяПодсказка" id="155"/>
 								</InputField>
-								<CheckBoxField name="ТаблицаДокументыИсключеноПроведение" id="107">
+								<CheckBoxField name="ТаблицаДокументыИсключеноПроведение" id="159">
 									<DataPath>ТаблицаДокументы.ИсключеноПроведение</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТаблицаДокументыИсключеноПроведениеКонтекстноеМеню" id="108"/>
-									<ExtendedTooltip name="ТаблицаДокументыИсключеноПроведениеРасширеннаяПодсказка" id="109"/>
+									<ContextMenu name="ТаблицаДокументыИсключеноПроведениеКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ТаблицаДокументыИсключеноПроведениеРасширеннаяПодсказка" id="161"/>
 								</CheckBoxField>
-								<CheckBoxField name="ТаблицаДокументыИсключеноПечатныеФормы" id="110">
+								<CheckBoxField name="ТаблицаДокументыИсключеноПечатныеФормы" id="162">
 									<DataPath>ТаблицаДокументы.ИсключеноПечатныеФормы</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТаблицаДокументыИсключеноПечатныеФормыКонтекстноеМеню" id="111"/>
-									<ExtendedTooltip name="ТаблицаДокументыИсключеноПечатныеФормыРасширеннаяПодсказка" id="112"/>
+									<ContextMenu name="ТаблицаДокументыИсключеноПечатныеФормыКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ТаблицаДокументыИсключеноПечатныеФормыРасширеннаяПодсказка" id="164"/>
 								</CheckBoxField>
 							</ChildItems>
 						</Table>
-						<Table name="ТаблицаПечатныеФормы" id="151">
+						<Table name="ТаблицаПечатныеФормы" id="165">
 							<Representation>List</Representation>
-							<TitleLocation>Top</TitleLocation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<SearchOnInput>Use</SearchOnInput>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ТаблицаПечатныеФормы</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Печатные формы объекта</v8:content>
-								</v8:item>
-							</Title>
+							<SearchStringLocation>CommandBar</SearchStringLocation>
+							<SearchControlLocation>CommandBar</SearchControlLocation>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТаблицаПечатныеФормыКонтекстноеМеню" id="152"/>
-							<AutoCommandBar name="ТаблицаПечатныеФормыКоманднаяПанель" id="153">
+							<ContextMenu name="ТаблицаПечатныеФормыКонтекстноеМеню" id="166"/>
+							<AutoCommandBar name="ТаблицаПечатныеФормыКоманднаяПанель" id="167">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ТаблицаПечатныеФормыРасширеннаяПодсказка" id="154"/>
-							<SearchStringAddition name="ТаблицаПечатныеФормыСтрокаПоиска" id="155">
+							<ExtendedTooltip name="ТаблицаПечатныеФормыРасширеннаяПодсказка" id="168"/>
+							<SearchStringAddition name="ТаблицаПечатныеФормыСтрокаПоиска" id="169">
 								<AdditionSource>
 									<Item>ТаблицаПечатныеФормы</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаПечатныеФормыСтрокаПоискаКонтекстноеМеню" id="156"/>
-								<ExtendedTooltip name="ТаблицаПечатныеФормыСтрокаПоискаРасширеннаяПодсказка" id="157"/>
+								<ContextMenu name="ТаблицаПечатныеФормыСтрокаПоискаКонтекстноеМеню" id="170"/>
+								<ExtendedTooltip name="ТаблицаПечатныеФормыСтрокаПоискаРасширеннаяПодсказка" id="171"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ТаблицаПечатныеФормыСостояниеПросмотра" id="158">
+							<ViewStatusAddition name="ТаблицаПечатныеФормыСостояниеПросмотра" id="172">
 								<AdditionSource>
 									<Item>ТаблицаПечатныеФормы</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаПечатныеФормыСостояниеПросмотраКонтекстноеМеню" id="159"/>
-								<ExtendedTooltip name="ТаблицаПечатныеФормыСостояниеПросмотраРасширеннаяПодсказка" id="160"/>
+								<ContextMenu name="ТаблицаПечатныеФормыСостояниеПросмотраКонтекстноеМеню" id="173"/>
+								<ExtendedTooltip name="ТаблицаПечатныеФормыСостояниеПросмотраРасширеннаяПодсказка" id="174"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ТаблицаПечатныеФормыУправлениеПоиском" id="161">
+							<SearchControlAddition name="ТаблицаПечатныеФормыУправлениеПоиском" id="175">
 								<AdditionSource>
 									<Item>ТаблицаПечатныеФормы</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаПечатныеФормыУправлениеПоискомКонтекстноеМеню" id="162"/>
-								<ExtendedTooltip name="ТаблицаПечатныеФормыУправлениеПоискомРасширеннаяПодсказка" id="163"/>
+								<ContextMenu name="ТаблицаПечатныеФормыУправлениеПоискомКонтекстноеМеню" id="176"/>
+								<ExtendedTooltip name="ТаблицаПечатныеФормыУправлениеПоискомРасширеннаяПодсказка" id="177"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<CheckBoxField name="ТаблицаПечатныеФормыИсключено" id="167">
+								<CheckBoxField name="ТаблицаПечатныеФормыИсключено" id="181">
 									<DataPath>ТаблицаПечатныеФормы.Исключено</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТаблицаПечатныеФормыИсключеноКонтекстноеМеню" id="168"/>
-									<ExtendedTooltip name="ТаблицаПечатныеФормыИсключеноРасширеннаяПодсказка" id="169"/>
+									<ContextMenu name="ТаблицаПечатныеФормыИсключеноКонтекстноеМеню" id="182"/>
+									<ExtendedTooltip name="ТаблицаПечатныеФормыИсключеноРасширеннаяПодсказка" id="183"/>
 								</CheckBoxField>
-								<InputField name="ТаблицаПечатныеФормыИмяМетаданного" id="164">
-									<DataPath>ТаблицаПечатныеФормы.ИмяМетаданного</DataPath>
-									<Visible>false</Visible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаПечатныеФормыИмяМетаданногоКонтекстноеМеню" id="165"/>
-									<ExtendedTooltip name="ТаблицаПечатныеФормыИмяМетаданногоРасширеннаяПодсказка" id="166"/>
-								</InputField>
-								<InputField name="ТаблицаПечатныеФормыИдентификатор" id="170">
+								<InputField name="ТаблицаПечатныеФормыИдентификатор" id="184">
 									<DataPath>ТаблицаПечатныеФормы.Идентификатор</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаПечатныеФормыИдентификаторКонтекстноеМеню" id="171"/>
-									<ExtendedTooltip name="ТаблицаПечатныеФормыИдентификаторРасширеннаяПодсказка" id="172"/>
+									<ContextMenu name="ТаблицаПечатныеФормыИдентификаторКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="ТаблицаПечатныеФормыИдентификаторРасширеннаяПодсказка" id="186"/>
 								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="СтраницаМакетыСКД" id="121">
+				<Page name="СтраницаМакетыСКД" id="94">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -505,23 +478,16 @@
 							<v8:content>Страница макеты СКД</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаМакетыСКДРасширеннаяПодсказка" id="122"/>
+					<ExtendedTooltip name="СтраницаМакетыСКДРасширеннаяПодсказка" id="95"/>
 					<ChildItems>
-						<CheckBoxField name="ТестированиеМакетыСКД" id="179">
-							<DataPath>ТестированиеМакетыСКД</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Тестировать макеты СКД</v8:content>
-								</v8:item>
-							</Title>
+						<CheckBoxField name="ТестироватьМакетыСКД" id="96">
+							<DataPath>ТестироватьМакетыСКД</DataPath>
 							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ТестированиеМакетыСКДКонтекстноеМеню" id="180"/>
-							<ExtendedTooltip name="ТестированиеМакетыСКДРасширеннаяПодсказка" id="181"/>
+							<ContextMenu name="ТестироватьМакетыСКДКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ТестироватьМакетыСКДРасширеннаяПодсказка" id="98"/>
 						</CheckBoxField>
-						<Table name="ТаблицаМакетыСКД" id="123">
+						<Table name="ТаблицаМакетыСКД" id="99">
 							<Representation>List</Representation>
-							<ChangeRowSet>false</ChangeRowSet>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<SearchOnInput>Use</SearchOnInput>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -530,62 +496,62 @@
 							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<SearchControlLocation>CommandBar</SearchControlLocation>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТаблицаМакетыСКДКонтекстноеМеню" id="124"/>
-							<AutoCommandBar name="ТаблицаМакетыСКДКоманднаяПанель" id="125">
+							<ContextMenu name="ТаблицаМакетыСКДКонтекстноеМеню" id="100"/>
+							<AutoCommandBar name="ТаблицаМакетыСКДКоманднаяПанель" id="101">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ТаблицаМакетыСКДРасширеннаяПодсказка" id="126"/>
-							<SearchStringAddition name="ТаблицаМакетыСКДСтрокаПоиска" id="127">
+							<ExtendedTooltip name="ТаблицаМакетыСКДРасширеннаяПодсказка" id="102"/>
+							<SearchStringAddition name="ТаблицаМакетыСКДСтрокаПоиска" id="103">
 								<AdditionSource>
 									<Item>ТаблицаМакетыСКД</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаМакетыСКДСтрокаПоискаКонтекстноеМеню" id="128"/>
-								<ExtendedTooltip name="ТаблицаМакетыСКДСтрокаПоискаРасширеннаяПодсказка" id="129"/>
+								<ContextMenu name="ТаблицаМакетыСКДСтрокаПоискаКонтекстноеМеню" id="104"/>
+								<ExtendedTooltip name="ТаблицаМакетыСКДСтрокаПоискаРасширеннаяПодсказка" id="105"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ТаблицаМакетыСКДСостояниеПросмотра" id="130">
+							<ViewStatusAddition name="ТаблицаМакетыСКДСостояниеПросмотра" id="106">
 								<AdditionSource>
 									<Item>ТаблицаМакетыСКД</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаМакетыСКДСостояниеПросмотраКонтекстноеМеню" id="131"/>
-								<ExtendedTooltip name="ТаблицаМакетыСКДСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+								<ContextMenu name="ТаблицаМакетыСКДСостояниеПросмотраКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="ТаблицаМакетыСКДСостояниеПросмотраРасширеннаяПодсказка" id="108"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ТаблицаМакетыСКДУправлениеПоиском" id="133">
+							<SearchControlAddition name="ТаблицаМакетыСКДУправлениеПоиском" id="109">
 								<AdditionSource>
 									<Item>ТаблицаМакетыСКД</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ТаблицаМакетыСКДУправлениеПоискомКонтекстноеМеню" id="134"/>
-								<ExtendedTooltip name="ТаблицаМакетыСКДУправлениеПоискомРасширеннаяПодсказка" id="135"/>
+								<ContextMenu name="ТаблицаМакетыСКДУправлениеПоискомКонтекстноеМеню" id="110"/>
+								<ExtendedTooltip name="ТаблицаМакетыСКДУправлениеПоискомРасширеннаяПодсказка" id="111"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<InputField name="ТаблицаМакетыСКДИмяМетаданного" id="136">
+								<InputField name="ТаблицаМакетыСКДИмяМетаданного" id="112">
 									<DataPath>ТаблицаМакетыСКД.ИмяМетаданного</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаМакетыСКДИмяМетаданногоКонтекстноеМеню" id="137"/>
-									<ExtendedTooltip name="ТаблицаМакетыСКДИмяМетаданногоРасширеннаяПодсказка" id="138"/>
+									<ContextMenu name="ТаблицаМакетыСКДИмяМетаданногоКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="ТаблицаМакетыСКДИмяМетаданногоРасширеннаяПодсказка" id="114"/>
 								</InputField>
-								<InputField name="ТаблицаМакетыСКДПуть" id="145">
+								<InputField name="ТаблицаМакетыСКДОбъект" id="121">
 									<DataPath>ТаблицаМакетыСКД.Объект</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаМакетыСКДПутьКонтекстноеМеню" id="146"/>
-									<ExtendedTooltip name="ТаблицаМакетыСКДПутьРасширеннаяПодсказка" id="147"/>
+									<ContextMenu name="ТаблицаМакетыСКДОбъектКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ТаблицаМакетыСКДОбъектРасширеннаяПодсказка" id="123"/>
 								</InputField>
-								<CheckBoxField name="ТаблицаМакетыСКДИсключено" id="142">
+								<CheckBoxField name="ТаблицаМакетыСКДИсключено" id="118">
 									<DataPath>ТаблицаМакетыСКД.Исключено</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТаблицаМакетыСКДИсключеноКонтекстноеМеню" id="143"/>
-									<ExtendedTooltip name="ТаблицаМакетыСКДИсключеноРасширеннаяПодсказка" id="144"/>
+									<ContextMenu name="ТаблицаМакетыСКДИсключеноКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ТаблицаМакетыСКДИсключеноРасширеннаяПодсказка" id="120"/>
 								</CheckBoxField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="СтраницаНастройки" id="78">
+				<Page name="СтраницаДопНастройки" id="86">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -595,22 +561,36 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страница настройки</v8:content>
+							<v8:content>Страница доп настройки</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="79"/>
+					<ExtendedTooltip name="СтраницаДопНастройкиРасширеннаяПодсказка" id="87"/>
 					<ChildItems>
-						<CheckBoxField name="ЗакрыватьМодальныеОкна" id="80">
+						<CheckBoxField name="ЗакрыватьМодальныеОкна" id="88">
 							<DataPath>ЗакрыватьМодальныеОкна</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В файл добавляется настройка из примера официальной документации https://github.com/vanessa-opensource/add/blob/develop/tests/smoke/smoke.bsp.json</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ЗакрыватьМодальныеОкнаКонтекстноеМеню" id="81"/>
-							<ExtendedTooltip name="ЗакрыватьМодальныеОкнаРасширеннаяПодсказка" id="82"/>
+							<ContextMenu name="ЗакрыватьМодальныеОкнаКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="ЗакрыватьМодальныеОкнаРасширеннаяПодсказка" id="90"/>
 						</CheckBoxField>
-						<CheckBoxField name="ТестированиеКомандногоИнтерфейса" id="148">
-							<DataPath>ТестированиеКомандногоИнтерфейса</DataPath>
+						<CheckBoxField name="ТестироватьКомандныйИнтерфейс" id="91">
+							<DataPath>ТестироватьКомандныйИнтерфейс</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включить использование тестов командного интерфейса. В исключения по объектам попадают объекты, указанные на вкладке Открытие форм в группах Существующие</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ТестированиеКомандногоИнтерфейсаКонтекстноеМеню" id="149"/>
-							<ExtendedTooltip name="ТестированиеКомандногоИнтерфейсаРасширеннаяПодсказка" id="150"/>
+							<ContextMenu name="ТестироватьКомандныйИнтерфейсКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="ТестироватьКомандныйИнтерфейсРасширеннаяПодсказка" id="93"/>
 						</CheckBoxField>
 					</ChildItems>
 				</Page>
@@ -865,7 +845,29 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ЗакрыватьМодальныеОкна" id="5">
+		<Attribute name="ТестироватьОткрытиеФорм" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестировать открытие форм</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрываемФормыНаКлиентеТестирования" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открываем формы на клиенте тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрыватьМодальныеОкна" id="7">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -876,100 +878,29 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ТаблицаДокументы" id="8">
+		<Attribute name="ТестироватьКомандныйИнтерфейс" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Таблица документы</v8:content>
+					<v8:content>Тестировать командный интерфейс</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueTable</v8:Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-			<Columns>
-				<Column name="ИмяМетаданного" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Имя метаданного</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>200</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-				<Column name="ЕстьИзмененияРасширениями" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Есть изменения расширениями</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="ИсключеноПроведение" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Исключено для проведения</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="ИсключеноПечатныеФормы" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Исключено для проверки печатных форм</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-			</Columns>
 		</Attribute>
-		<Attribute name="КоличествоДокументовПроведение" id="6">
+		<Attribute name="ТестироватьМакетыСКД" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Количество документов проведение</v8:content>
+					<v8:content>Тестировать макеты СКД</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="КоличествоДокументовПечатныеФормы" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Количество документов печатные формы</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ТаблицаМакетыСКД" id="9">
+		<Attribute name="ТаблицаМакетыСКД" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1034,18 +965,61 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ТестированиеКомандногоИнтерфейса" id="10">
+		<Attribute name="КоличествоДокументовПечатныеФормы" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тестирование командного интерфейса</v8:content>
+					<v8:content>Количество документов печатные формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоДокументовПроведение" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество документов проведение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТестироватьПроведение" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестировать проведение</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ТаблицаПечатныеФормы" id="11">
+		<Attribute name="ТестироватьПечатныеФормы" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестировать печатные формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаПечатныеФормы" id="15">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1099,60 +1073,66 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ТестированиеПроведение" id="12">
+		<Attribute name="ТаблицаДокументы" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проведение</v8:content>
+					<v8:content>Таблица документы</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="ТестированиеПечатныхФорм" id="13">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Печатные формы</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ТестированиеМакетыСКД" id="14">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Макеты СКД</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ТестированиеОткрытиеФорм" id="15">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Тестирование открытие форм</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ОткрываемФормыНаКлиентеТестирования" id="16">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открываем формы на клиенте тестирования</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
+			<Columns>
+				<Column name="ИмяМетаданного" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя метаданного</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияРасширениями" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсключеноПроведение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключено для проведения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсключеноПечатныеФормы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключено для проверки печатных форм</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -1170,7 +1150,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьДеревоМетаданных</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СоздатьФайлНастроек" id="2">
 			<Title>
@@ -1186,7 +1165,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьФайлНастроек</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗагрузитьФайлНастроек" id="3">
 			<Title>
@@ -1202,13 +1180,12 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьФайлНастроек</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИсключитьОбъектыНеРасширение" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Исключить объекты не используемые в расширение</v8:content>
+					<v8:content>Исключить объекты, не используемые в расширениях</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
