@@ -1,0 +1,2694 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыполнитьПроверки" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыполнитьПроверки</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьПроверкиРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаПроверки_Заполнить" id="426">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Проверки_Заполнить</CommandName>
+				<ExtendedTooltip name="ФормаПроверки_ЗаполнитьРасширеннаяПодсказка" id="427"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщиеНастройки" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режимы проверки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ОбщиеНастройкиРасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<CheckBoxField name="ПроверятьФормы" id="411">
+					<DataPath>ПроверятьФормы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формы</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверятьФормыКонтекстноеМеню" id="412"/>
+					<ExtendedTooltip name="ПроверятьФормыРасширеннаяПодсказка" id="413"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПроверятьОтчеты" id="417">
+					<DataPath>ПроверятьОтчеты</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверятьОтчетыКонтекстноеМеню" id="418"/>
+					<ExtendedTooltip name="ПроверятьОтчетыРасширеннаяПодсказка" id="419"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПроверятьПечать" id="414">
+					<DataPath>ПроверятьПечать</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверятьПечатьКонтекстноеМеню" id="415"/>
+					<ExtendedTooltip name="ПроверятьПечатьРасширеннаяПодсказка" id="416"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПроверятьДокументы" id="420">
+					<DataPath>ПроверятьДокументы</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверятьДокументыКонтекстноеМеню" id="421"/>
+					<ExtendedTooltip name="ПроверятьДокументыРасширеннаяПодсказка" id="422"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПроверятьСправочники" id="423">
+					<DataPath>ПроверятьСправочники</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверятьСправочникиКонтекстноеМеню" id="424"/>
+					<ExtendedTooltip name="ПроверятьСправочникиРасширеннаяПодсказка" id="425"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<Page name="Страница_Формы" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница формы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница_ФормыРасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<LabelDecoration name="Формы_Справка" id="149">
+							<TextColor>0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверяем открытие форм объектов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Формы_СправкаКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="Формы_СправкаРасширеннаяПодсказка" id="151"/>
+						</LabelDecoration>
+						<UsualGroup name="Формы_Настройка" id="104">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формы настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Формы_НастройкаРасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<InputField name="ОткрытиеФорм_КоличествоСсылок" id="45">
+									<DataPath>Формы_КоличествоОбъектов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сколько объектов одного типа проверять</v8:content>
+										</v8:item>
+									</Title>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ОткрытиеФорм_КоличествоСсылокКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ОткрытиеФорм_КоличествоСсылокРасширеннаяПодсказка" id="47"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Формы_Объекты" id="106">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверяемые объекты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формы объекты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Формы_ОбъектыРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<Table name="Формы_ДеревоОбъектов" id="3">
+									<Representation>Tree</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Формы_ДеревоОбъектов</DataPath>
+									<ContextMenu name="Формы_ДеревоОбъектовКонтекстноеМеню" id="4"/>
+									<AutoCommandBar name="Формы_ДеревоОбъектовКоманднаяПанель" id="5">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="Формы_ДеревоОбъектовФормы_Заполнить" id="216">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Формы_Заполнить</CommandName>
+												<ExtendedTooltip name="Формы_ДеревоОбъектовФормы_ЗаполнитьРасширеннаяПодсказка" id="217"/>
+											</Button>
+											<Button name="ОткрытиеФорм_ДеревоОбъектовУстановитьФлажки" id="63">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Формы_УстановитьФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовУстановитьФлажкиРасширеннаяПодсказка" id="64"/>
+											</Button>
+											<Button name="ОткрытиеФорм_ДеревоОбъектовСнятьГалку" id="61">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Формы_СнятьФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовСнятьГалкуРасширеннаяПодсказка" id="62"/>
+											</Button>
+											<Button name="ФормаРазвернутьВсеГруппы" id="147">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Формы_РазвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ФормаРазвернутьВсеГруппыРасширеннаяПодсказка" id="148"/>
+											</Button>
+											<Button name="ФормаСвернутьВсеГруппы" id="145">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Формы_СвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ФормаСвернутьВсеГруппыРасширеннаяПодсказка" id="146"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Формы_ДеревоОбъектовРасширеннаяПодсказка" id="6"/>
+									<SearchStringAddition name="Формы_ДеревоОбъектовСтрокаПоиска" id="7">
+										<AdditionSource>
+											<Item>Формы_ДеревоОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Формы_ДеревоОбъектовСтрокаПоискаКонтекстноеМеню" id="8"/>
+										<ExtendedTooltip name="Формы_ДеревоОбъектовСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Формы_ДеревоОбъектовСостояниеПросмотра" id="10">
+										<AdditionSource>
+											<Item>Формы_ДеревоОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Формы_ДеревоОбъектовСостояниеПросмотраКонтекстноеМеню" id="11"/>
+										<ExtendedTooltip name="Формы_ДеревоОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Формы_ДеревоОбъектовУправлениеПоиском" id="13">
+										<AdditionSource>
+											<Item>Формы_ДеревоОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Формы_ДеревоОбъектовУправлениеПоискомКонтекстноеМеню" id="14"/>
+										<ExtendedTooltip name="Формы_ДеревоОбъектовУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="ОткрытиеФорм_ДеревоОбъектовТестировать" id="30">
+											<DataPath>Формы_ДеревоОбъектов.Тестировать</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОткрытиеФорм_ДеревоОбъектовТестироватьКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовТестироватьРасширеннаяПодсказка" id="32"/>
+											<Events>
+												<Event name="OnChange">ОткрытиеФорм_ДеревоОбъектовТестироватьПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<ColumnGroup name="ОткрытиеФорм_ДеревоОбъектовГруппаКартинки" id="28">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открытие форм дерево объектов группа картинки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открытие форм дерево объектов группа картинки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовГруппаКартинкиРасширеннаяПодсказка" id="29"/>
+											<ChildItems>
+												<PictureField name="ОткрытиеФорм_ДеревоОбъектовКартинка" id="19">
+													<DataPath>Формы_ДеревоОбъектов.Картинка</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверяемый объект</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HorizontalStretch>false</HorizontalStretch>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ОткрытиеФорм_ДеревоОбъектовКартинкаКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовКартинкаРасширеннаяПодсказка" id="21"/>
+												</PictureField>
+												<InputField name="ОткрытиеФорм_ДеревоОбъектовИмя" id="16">
+													<DataPath>Формы_ДеревоОбъектов.Имя</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОткрытиеФорм_ДеревоОбъектовИмяКонтекстноеМеню" id="17"/>
+													<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовИмяРасширеннаяПодсказка" id="18"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="ОткрытиеФорм_ДеревоОбъектовПараметрыФормы" id="48">
+											<DataPath>Формы_ДеревоОбъектов.ПараметрыФормы</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОткрытиеФорм_ДеревоОбъектовПараметрыФормыКонтекстноеМеню" id="49"/>
+											<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовПараметрыФормыРасширеннаяПодсказка" id="50"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Страница_Отчеты" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница отчеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница_ОтчетыРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<LabelDecoration name="Отчеты_Справка" id="152">
+							<TextColor>0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формируем отчеты с настройками по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Отчеты_СправкаКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="Отчеты_СправкаРасширеннаяПодсказка" id="154"/>
+						</LabelDecoration>
+						<UsualGroup name="Отчеты_Настройка" id="121">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Отчеты_НастройкаРасширеннаяПодсказка" id="122"/>
+						</UsualGroup>
+						<UsualGroup name="Отчеты_Объекты" id="123">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверяемые объекты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты объекты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Отчеты_ОбъектыРасширеннаяПодсказка" id="124"/>
+							<ChildItems>
+								<Table name="Отчеты_ДеревоОбъектов" id="235">
+									<Representation>Tree</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Отчеты_ДеревоОбъектов</DataPath>
+									<ContextMenu name="Отчеты_ДеревоОбъектовКонтекстноеМеню" id="236"/>
+									<AutoCommandBar name="Отчеты_ДеревоОбъектовКоманднаяПанель" id="237">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ОтчетыКТестированиюОтчеты_Заполнить" id="278">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отчеты_Заполнить</CommandName>
+												<ExtendedTooltip name="ОтчетыКТестированиюОтчеты_ЗаполнитьРасширеннаяПодсказка" id="279"/>
+											</Button>
+											<Button name="Отчеты_ПроставитьВсеФлажки" id="286">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отчеты_ПроставитьВсеФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Отчеты_ПроставитьВсеФлажкиРасширеннаяПодсказка" id="287"/>
+											</Button>
+											<Button name="Отчеты_СнятьВсеФлажки" id="284">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отчеты_СнятьВсеФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Отчеты_СнятьВсеФлажкиРасширеннаяПодсказка" id="285"/>
+											</Button>
+											<Button name="Отчеты_СвернутьВсеГруппы" id="280">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отчеты_СвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Отчеты_СвернутьВсеГруппыРасширеннаяПодсказка" id="281"/>
+											</Button>
+											<Button name="Отчеты_РазвернутьВсеГруппы" id="282">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отчеты_РазвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Отчеты_РазвернутьВсеГруппыРасширеннаяПодсказка" id="283"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Отчеты_ДеревоОбъектовРасширеннаяПодсказка" id="238"/>
+									<SearchStringAddition name="Отчеты_ДеревоОбъектовСтрокаПоиска" id="239">
+										<AdditionSource>
+											<Item>Отчеты_ДеревоОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Отчеты_ДеревоОбъектовСтрокаПоискаКонтекстноеМеню" id="240"/>
+										<ExtendedTooltip name="Отчеты_ДеревоОбъектовСтрокаПоискаРасширеннаяПодсказка" id="241"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Отчеты_ДеревоОбъектовСостояниеПросмотра" id="242">
+										<AdditionSource>
+											<Item>Отчеты_ДеревоОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Отчеты_ДеревоОбъектовСостояниеПросмотраКонтекстноеМеню" id="243"/>
+										<ExtendedTooltip name="Отчеты_ДеревоОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="244"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Отчеты_ДеревоОбъектовУправлениеПоиском" id="245">
+										<AdditionSource>
+											<Item>Отчеты_ДеревоОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Отчеты_ДеревоОбъектовУправлениеПоискомКонтекстноеМеню" id="246"/>
+										<ExtendedTooltip name="Отчеты_ДеревоОбъектовУправлениеПоискомРасширеннаяПодсказка" id="247"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="Отчеты_ДеревоОбъектов_Тестировать" id="251">
+											<DataPath>Отчеты_ДеревоОбъектов.Тестировать</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="Отчеты_ДеревоОбъектов_ТестироватьКонтекстноеМеню" id="252"/>
+											<ExtendedTooltip name="Отчеты_ДеревоОбъектов_ТестироватьРасширеннаяПодсказка" id="253"/>
+											<Events>
+												<Event name="OnChange">Отчеты_ДеревоОбъектов_ТестироватьПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="Отчеты_ДеревоОбъектов_Представление" id="257">
+											<DataPath>Отчеты_ДеревоОбъектов.Представление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверяемый объект</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="Отчеты_ДеревоОбъектов_ПредставлениеКонтекстноеМеню" id="258"/>
+											<ExtendedTooltip name="Отчеты_ДеревоОбъектов_ПредставлениеРасширеннаяПодсказка" id="259"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Страница_Печать" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница печать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница_ПечатьРасширеннаяПодсказка" id="114"/>
+					<ChildItems>
+						<LabelDecoration name="Печать_Справка" id="155">
+							<TextColor>0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формируем печатные формы с настройками по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Печать_СправкаКонтекстноеМеню" id="156"/>
+							<ExtendedTooltip name="Печать_СправкаРасширеннаяПодсказка" id="157"/>
+						</LabelDecoration>
+						<UsualGroup name="Печать_Настройка" id="127">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Печать_НастройкаРасширеннаяПодсказка" id="128"/>
+						</UsualGroup>
+						<UsualGroup name="Печать_Объекты" id="129">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверяемые объекты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты объекты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Печать_ОбъектыРасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<Table name="Печать_ДеревоОбъектов" id="164">
+									<Representation>Tree</Representation>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Печать_ДеревоОбъектов</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>HierarchicalList</ExcludedCommand>
+										<ExcludedCommand>List</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>Tree</ExcludedCommand>
+									</CommandSet>
+									<ContextMenu name="Печать_ДеревоОбъектовКонтекстноеМеню" id="165"/>
+									<AutoCommandBar name="Печать_ДеревоОбъектовКоманднаяПанель" id="166">
+										<ChildItems>
+											<Button name="Печать_Заполнить" id="218">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Печать_Заполнить</CommandName>
+												<ExtendedTooltip name="Печать_ЗаполнитьРасширеннаяПодсказка" id="219"/>
+											</Button>
+											<Button name="Печать_ПроставитьВсеФлажки" id="190">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Печать_ПроставитьВсеФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Печать_ПроставитьВсеФлажкиРасширеннаяПодсказка" id="191"/>
+											</Button>
+											<Button name="Печать_СнятьВсеФлажки" id="192">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Печать_СнятьВсеФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Печать_СнятьВсеФлажкиРасширеннаяПодсказка" id="193"/>
+											</Button>
+											<Button name="Печать_РазвернутьВсеГруппы" id="198">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Печать_РазвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Печать_РазвернутьВсеГруппыРасширеннаяПодсказка" id="199"/>
+											</Button>
+											<Button name="Печать_СвернутьВсеГруппы" id="200">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Печать_СвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Печать_СвернутьВсеГруппыРасширеннаяПодсказка" id="201"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Печать_ДеревоОбъектовРасширеннаяПодсказка" id="167"/>
+									<SearchStringAddition name="Печать_ДеревоОбъектовСтрокаПоиска" id="168">
+										<AdditionSource>
+											<Item>Печать_ДеревоОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Печать_ДеревоОбъектовСтрокаПоискаКонтекстноеМеню" id="169"/>
+										<ExtendedTooltip name="Печать_ДеревоОбъектовСтрокаПоискаРасширеннаяПодсказка" id="170"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Печать_ДеревоОбъектовСостояниеПросмотра" id="171">
+										<AdditionSource>
+											<Item>Печать_ДеревоОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Печать_ДеревоОбъектовСостояниеПросмотраКонтекстноеМеню" id="172"/>
+										<ExtendedTooltip name="Печать_ДеревоОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="173"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Печать_ДеревоОбъектовУправлениеПоиском" id="174">
+										<AdditionSource>
+											<Item>Печать_ДеревоОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Печать_ДеревоОбъектовУправлениеПоискомКонтекстноеМеню" id="175"/>
+										<ExtendedTooltip name="Печать_ДеревоОбъектовУправлениеПоискомРасширеннаяПодсказка" id="176"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="Печать_ДеревоОбъектов_Тестировать" id="204">
+											<DataPath>Печать_ДеревоОбъектов.Тестировать</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="Печать_ДеревоОбъектов_ТестироватьКонтекстноеМеню" id="205"/>
+											<ExtendedTooltip name="Печать_ДеревоОбъектов_ТестироватьРасширеннаяПодсказка" id="206"/>
+											<Events>
+												<Event name="OnChange">ПечатныеФормыКТестированиюТестироватьПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="Печать_ДеревоОбъектов_Представление" id="207">
+											<DataPath>Печать_ДеревоОбъектов.Представление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверяемый объект</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="Печать_ДеревоОбъектов_ПредставлениеКонтекстноеМеню" id="208"/>
+											<ExtendedTooltip name="Печать_ДеревоОбъектов_ПредставлениеРасширеннаяПодсказка" id="209"/>
+										</InputField>
+										<InputField name="Печать_ДеревоОбъектов_ОбъектПечати" id="210">
+											<DataPath>Печать_ДеревоОбъектов.ОбъектПечати</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данные</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="Печать_ДеревоОбъектов_ОбъектПечатиКонтекстноеМеню" id="211"/>
+											<ExtendedTooltip name="Печать_ДеревоОбъектов_ОбъектПечатиРасширеннаяПодсказка" id="212"/>
+											<Events>
+												<Event name="OnChange">ПечатныеФормыКТестированиюОбъектПечатиПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Страница_Документы" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница документы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница_ДокументыРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<LabelDecoration name="Документы_Справка" id="158">
+							<TextColor>0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проводим документы</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Документы_СправкаКонтекстноеМеню" id="159"/>
+							<ExtendedTooltip name="Документы_СправкаРасширеннаяПодсказка" id="160"/>
+						</LabelDecoration>
+						<UsualGroup name="Документы_Настройка" id="133">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Документы_НастройкаРасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<InputField name="Документы_КоличествоОбъектов" id="408">
+									<DataPath>Документы_КоличествоОбъектов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сколько объектов одного типа проверять</v8:content>
+										</v8:item>
+									</Title>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="Документы_КоличествоОбъектовКонтекстноеМеню" id="409"/>
+									<ExtendedTooltip name="Документы_КоличествоОбъектовРасширеннаяПодсказка" id="410"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Документы_Объекты" id="135">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверяемые объекты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты объекты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="Документы_ОбъектыРасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<Table name="Документы_ДеревоОбъектов" id="347">
+									<Representation>Tree</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Документы_ДеревоОбъектов</DataPath>
+									<ContextMenu name="Документы_ДеревоОбъектовКонтекстноеМеню" id="348"/>
+									<AutoCommandBar name="Документы_ДеревоОбъектовКоманднаяПанель" id="349">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="Документы_Заполнить" id="400">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Документы_Заполнить</CommandName>
+												<ExtendedTooltip name="Документы_ЗаполнитьРасширеннаяПодсказка" id="401"/>
+											</Button>
+											<Button name="Документы_УстановитьФлажки" id="396">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Документы_УстановитьФлажки</CommandName>
+												<ExtendedTooltip name="Документы_УстановитьФлажкиРасширеннаяПодсказка" id="397"/>
+											</Button>
+											<Button name="Документы_СнятьФлажки" id="398">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Документы_СнятьФлажки</CommandName>
+												<ExtendedTooltip name="Документы_СнятьФлажкиРасширеннаяПодсказка" id="399"/>
+											</Button>
+											<Button name="Документы_РазвернутьВсеГруппы" id="402">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Документы_РазвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Документы_РазвернутьВсеГруппыРасширеннаяПодсказка" id="403"/>
+											</Button>
+											<Button name="Документы_СвернутьВсеГруппы" id="404">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Документы_СвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Документы_СвернутьВсеГруппыРасширеннаяПодсказка" id="405"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Документы_ДеревоОбъектовРасширеннаяПодсказка" id="350"/>
+									<SearchStringAddition name="Документы_ДеревоОбъектовСтрокаПоиска" id="351">
+										<AdditionSource>
+											<Item>Документы_ДеревоОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Документы_ДеревоОбъектовСтрокаПоискаКонтекстноеМеню" id="352"/>
+										<ExtendedTooltip name="Документы_ДеревоОбъектовСтрокаПоискаРасширеннаяПодсказка" id="353"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Документы_ДеревоОбъектовСостояниеПросмотра" id="354">
+										<AdditionSource>
+											<Item>Документы_ДеревоОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Документы_ДеревоОбъектовСостояниеПросмотраКонтекстноеМеню" id="355"/>
+										<ExtendedTooltip name="Документы_ДеревоОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="356"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Документы_ДеревоОбъектовУправлениеПоиском" id="357">
+										<AdditionSource>
+											<Item>Документы_ДеревоОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Документы_ДеревоОбъектовУправлениеПоискомКонтекстноеМеню" id="358"/>
+										<ExtendedTooltip name="Документы_ДеревоОбъектовУправлениеПоискомРасширеннаяПодсказка" id="359"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="Документы_ДеревоОбъектов_Тестировать" id="372">
+											<DataPath>Документы_ДеревоОбъектов.Тестировать</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="Документы_ДеревоОбъектов_ТестироватьКонтекстноеМеню" id="373"/>
+											<ExtendedTooltip name="Документы_ДеревоОбъектов_ТестироватьРасширеннаяПодсказка" id="374"/>
+											<Events>
+												<Event name="OnChange">Документы_ДеревоОбъектов_ТестироватьПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<ColumnGroup name="Документы_ДеревоОбъектовГруппа_ПроверяемыйОбъект" id="406">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Документы дерево объектов группа проверяемый объект</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Документы дерево объектов группа проверяемый объект</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="Документы_ДеревоОбъектовГруппа_ПроверяемыйОбъектРасширеннаяПодсказка" id="407"/>
+											<ChildItems>
+												<PictureField name="Документы_ДеревоОбъектов_Картинка" id="363">
+													<DataPath>Документы_ДеревоОбъектов.Картинка</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="Документы_ДеревоОбъектов_КартинкаКонтекстноеМеню" id="364"/>
+													<ExtendedTooltip name="Документы_ДеревоОбъектов_КартинкаРасширеннаяПодсказка" id="365"/>
+												</PictureField>
+												<InputField name="Документы_ДеревоОбъектов_Синоним" id="369">
+													<DataPath>Документы_ДеревоОбъектов.Синоним</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверяемый объект</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="Документы_ДеревоОбъектов_СинонимКонтекстноеМеню" id="370"/>
+													<ExtendedTooltip name="Документы_ДеревоОбъектов_СинонимРасширеннаяПодсказка" id="371"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Страница_СправочникиИПВХ" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочники</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница справочники ИПВХ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница_СправочникиИПВХРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<LabelDecoration name="СправочникиИПВХ_Справка" id="161">
+							<TextColor>0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Записываем справочники</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СправочникиИПВХ_СправкаКонтекстноеМеню" id="162"/>
+							<ExtendedTooltip name="СправочникиИПВХ_СправкаРасширеннаяПодсказка" id="163"/>
+						</LabelDecoration>
+						<UsualGroup name="СправочникиИПВХ_Настройка" id="139">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="СправочникиИПВХ_НастройкаРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<InputField name="Справочники_КоличествоОбъектов" id="328">
+									<DataPath>Справочники_КоличествоОбъектов</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="Справочники_КоличествоОбъектовКонтекстноеМеню" id="329"/>
+									<ExtendedTooltip name="Справочники_КоличествоОбъектовРасширеннаяПодсказка" id="330"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СправочникиИПВХ_Объекты" id="141">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверяемые объекты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты объекты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="СправочникиИПВХ_ОбъектыРасширеннаяПодсказка" id="142"/>
+							<ChildItems>
+								<Table name="Справочники_ДеревоОбъектов" id="288">
+									<Representation>Tree</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Справочники_ДеревоОбъектов</DataPath>
+									<ContextMenu name="Справочники_ДеревоОбъектовКонтекстноеМеню" id="289"/>
+									<AutoCommandBar name="Справочники_ДеревоОбъектовКоманднаяПанель" id="290">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="Справочники_Заполнить" id="339">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Справочники_Заполнить</CommandName>
+												<ExtendedTooltip name="Справочники_ЗаполнитьРасширеннаяПодсказка" id="340"/>
+											</Button>
+											<Button name="Справочники_ПроставитьФлажки" id="335">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Справочники_ПроставитьФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Справочники_ПроставитьФлажкиРасширеннаяПодсказка" id="336"/>
+											</Button>
+											<Button name="Справочники_СнятьФлажки" id="337">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Справочники_СнятьФлажки</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Справочники_СнятьФлажкиРасширеннаяПодсказка" id="338"/>
+											</Button>
+											<Button name="Справочники_РазвернутьВсеГруппы" id="341">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Справочники_РазвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Справочники_РазвернутьВсеГруппыРасширеннаяПодсказка" id="342"/>
+											</Button>
+											<Button name="Справочники_СвернутьВсеГруппы" id="343">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Справочники_СвернутьВсеГруппы</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="Справочники_СвернутьВсеГруппыРасширеннаяПодсказка" id="344"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Справочники_ДеревоОбъектовРасширеннаяПодсказка" id="291"/>
+									<SearchStringAddition name="Справочники_ДеревоОбъектовСтрокаПоиска" id="292">
+										<AdditionSource>
+											<Item>Справочники_ДеревоОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Справочники_ДеревоОбъектовСтрокаПоискаКонтекстноеМеню" id="293"/>
+										<ExtendedTooltip name="Справочники_ДеревоОбъектовСтрокаПоискаРасширеннаяПодсказка" id="294"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Справочники_ДеревоОбъектовСостояниеПросмотра" id="295">
+										<AdditionSource>
+											<Item>Справочники_ДеревоОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Справочники_ДеревоОбъектовСостояниеПросмотраКонтекстноеМеню" id="296"/>
+										<ExtendedTooltip name="Справочники_ДеревоОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="297"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Справочники_ДеревоОбъектовУправлениеПоиском" id="298">
+										<AdditionSource>
+											<Item>Справочники_ДеревоОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Справочники_ДеревоОбъектовУправлениеПоискомКонтекстноеМеню" id="299"/>
+										<ExtendedTooltip name="Справочники_ДеревоОбъектовУправлениеПоискомРасширеннаяПодсказка" id="300"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="Справочники_ДеревоОбъектов_Тестировать" id="313">
+											<DataPath>Справочники_ДеревоОбъектов.Тестировать</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="Справочники_ДеревоОбъектов_ТестироватьКонтекстноеМеню" id="314"/>
+											<ExtendedTooltip name="Справочники_ДеревоОбъектов_ТестироватьРасширеннаяПодсказка" id="315"/>
+											<Events>
+												<Event name="OnChange">Справочники_ДеревоОбъектов_ТестироватьПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<ColumnGroup name="Справочники_ДеревоОбъектовГруппаПроверяемыйОбъект" id="345">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Справочники дерево объектов группа проверяемый объект</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Справочники дерево объектов группа проверяемый объект</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="Справочники_ДеревоОбъектовГруппаПроверяемыйОбъектРасширеннаяПодсказка" id="346"/>
+											<ChildItems>
+												<PictureField name="Справочники_ДеревоОбъектов_Картинка" id="304">
+													<DataPath>Справочники_ДеревоОбъектов.Картинка</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="Справочники_ДеревоОбъектов_КартинкаКонтекстноеМеню" id="305"/>
+													<ExtendedTooltip name="Справочники_ДеревоОбъектов_КартинкаРасширеннаяПодсказка" id="306"/>
+												</PictureField>
+												<InputField name="Справочники_ДеревоОбъектов_Синоним" id="310">
+													<DataPath>Справочники_ДеревоОбъектов.Синоним</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверяемый объект</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="Справочники_ДеревоОбъектов_СинонимКонтекстноеМеню" id="311"/>
+													<ExtendedTooltip name="Справочники_ДеревоОбъектов_СинонимРасширеннаяПодсказка" id="312"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа_Информация" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о выполнении проверок</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f</TitleTextColor>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="Группа_ИнформацияРасширеннаяПодсказка" id="109"/>
+			<ChildItems>
+				<Table name="_Информация" id="80">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>_Информация</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="_ИнформацияКонтекстноеМеню" id="81"/>
+					<AutoCommandBar name="_ИнформацияКоманднаяПанель" id="82">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="_Информация_Найти" id="227">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Item._Информация.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="_Информация_НайтиРасширеннаяПодсказка" id="228"/>
+							</Button>
+							<Button name="_Информация_ОтменитьПоиск" id="229">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item._Информация.StandardCommand.CancelSearch</CommandName>
+								<ExtendedTooltip name="_Информация_ОтменитьПоискРасширеннаяПодсказка" id="230"/>
+							</Button>
+							<Button name="_Информация_СортироватьСписокПоВозрастанию" id="231">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item._Информация.StandardCommand.SortListAsc</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_Информация_СортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="232"/>
+							</Button>
+							<Button name="_Информация_СортироватьСписокПоУбыванию" id="233">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item._Информация.StandardCommand.SortListDesc</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_Информация_СортироватьСписокПоУбываниюРасширеннаяПодсказка" id="234"/>
+							</Button>
+							<Button name="_Информация_ВывестиСписок" id="225">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Item._Информация.StandardCommand.OutputList</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="_Информация_ВывестиСписокРасширеннаяПодсказка" id="226"/>
+							</Button>
+							<Button name="_Информация_Информация_Очистить" id="223">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command._Информация_Очистить</CommandName>
+								<ExtendedTooltip name="_Информация_Информация_ОчиститьРасширеннаяПодсказка" id="224"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="_ИнформацияРасширеннаяПодсказка" id="83"/>
+					<SearchStringAddition name="_ИнформацияСтрокаПоиска" id="84">
+						<AdditionSource>
+							<Item>_Информация</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="_ИнформацияСтрокаПоискаКонтекстноеМеню" id="85"/>
+						<ExtendedTooltip name="_ИнформацияСтрокаПоискаРасширеннаяПодсказка" id="86"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="_ИнформацияСостояниеПросмотра" id="87">
+						<AdditionSource>
+							<Item>_Информация</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="_ИнформацияСостояниеПросмотраКонтекстноеМеню" id="88"/>
+						<ExtendedTooltip name="_ИнформацияСостояниеПросмотраРасширеннаяПодсказка" id="89"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="_ИнформацияУправлениеПоиском" id="90">
+						<AdditionSource>
+							<Item>_Информация</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="_ИнформацияУправлениеПоискомКонтекстноеМеню" id="91"/>
+						<ExtendedTooltip name="_ИнформацияУправлениеПоискомРасширеннаяПодсказка" id="92"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">Формы_ОшибкиВыбор</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="_Информация_ПроверямыйОбъект" id="93">
+							<DataPath>_Информация.ПроверямыйОбъект</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CellHyperlink>true</CellHyperlink>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="_Информация_ПроверямыйОбъектКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="_Информация_ПроверямыйОбъектРасширеннаяПодсказка" id="95"/>
+						</InputField>
+						<InputField name="_Информация_Данные" id="99">
+							<DataPath>_Информация.Данные</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_Информация_ДанныеКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="_Информация_ДанныеРасширеннаяПодсказка" id="101"/>
+						</InputField>
+						<InputField name="_ИнформацияТипОшибки" id="220">
+							<DataPath>_Информация.ТипОшибки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="_ИнформацияТипОшибкиКонтекстноеМеню" id="221"/>
+							<ExtendedTooltip name="_ИнформацияТипОшибкиРасширеннаяПодсказка" id="222"/>
+						</InputField>
+						<InputField name="_Информация_Описание" id="96">
+							<DataPath>_Информация.Описание</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoCellHeight>true</AutoCellHeight>
+							<MultiLine>true</MultiLine>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="_Информация_ОписаниеКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="_Информация_ОписаниеРасширеннаяПодсказка" id="98"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ГрупповаяПроверкаДоработок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Формы_ДеревоОбъектов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы дерево объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>Формы_ДеревоОбъектов</Field>
+			</Save>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тестировать" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестировать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоФорма" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это форма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПараметрыФормы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры формы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОсновнаяФорма" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная форма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Иерархический" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иерархический</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Формы_КоличествоОбъектов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы количество объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Формы_КоличествоОбъектов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_Информация" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>_Информация</Field>
+			</Save>
+			<Columns>
+				<Column name="ПроверямыйОбъект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверямый объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Данные" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ТипОшибки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РежимПроверки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим проверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>РежимПроверки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Печать_ДеревоОбъектов" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать дерево объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>Печать_ДеревоОбъектов</Field>
+			</Save>
+			<Columns>
+				<Column name="Тестировать" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестировать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МенеджерПечати" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер печати</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДополнительныеПараметры" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные параметры</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ИмяИсточника" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя источника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектПечати" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект печати</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="БылаОшибкаПриФормировании" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Была ошибка при формировании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Отчеты_ДеревоОбъектов" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты дерево объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>Отчеты_ДеревоОбъектов</Field>
+			</Save>
+			<Columns>
+				<Column name="ОтчетВариант" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет вариант</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Тестировать" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестировать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтчетВладелец" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет владелец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Представление" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ХешНастроек" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хеш настроек</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>32</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Настройки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="КлючВарианта" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ варианта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяОтчета" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя отчета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="БылаОшибкаПриФормировании" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Была ошибка при формировании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Справочники_КоличествоОбъектов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сколько объектов одного типа проверять</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Справочники_КоличествоОбъектов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Справочники_ДеревоОбъектов" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники дерево объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>Справочники_ДеревоОбъектов</Field>
+			</Save>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тестировать" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоСсылок" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество тестируемых объектов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПроцентПокрытия" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент покрытия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяТестирования" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоОбъектовВБазе" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество объектов в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Документы_ДеревоОбъектов" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы дерево объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>Документы_ДеревоОбъектов</Field>
+			</Save>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тестировать" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестировать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество тестируемых ссылок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыводитьПометку" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выводить пометку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Движения" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Движения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокСсылок" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список ссылок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Регистр" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыводитьКоличество" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выводить количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоОбъектовВБазе" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество объектов в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Документы_КоличествоОбъектов" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы количество объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Документы_КоличествоОбъектов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РежимыПроверки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режимы проверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>РежимыПроверки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроверятьФормы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверять формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПроверятьФормы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроверятьПечать" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПроверятьПечать</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроверятьОтчеты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПроверятьОтчеты</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроверятьДокументы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПроверятьДокументы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроверятьСправочники" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПроверятьСправочники</Field>
+			</Save>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоОбъектовТестировать</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоОбъектов.ЭтоФорма</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоОбъектовСценарий</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоОбъектовПараметрыФормы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоОбъектов.ЭтоФорма</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьПроверки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроверки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Формы_СнятьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Формы_СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Формы_УстановитьФлажки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Формы_УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Формы_СвернутьВсеГруппы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы свернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы свернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Формы_СвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Формы_РазвернутьВсеГруппы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы развернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы развернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Формы_РазвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Печать_РазвернутьВсеГруппы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать развернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать развернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать_РазвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Печать_СвернутьВсеГруппы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать свернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать свернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать_СвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Печать_СнятьВсеФлажки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать снять все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать снять все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать_СнятьВсеФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Печать_ПроставитьВсеФлажки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать проставить все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать проставить все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать_ПроставитьВсеФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Формы_Заполнить" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Формы_Заполнить</Action>
+		</Command>
+		<Command name="Печать_Заполнить" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать_Заполнить</Action>
+		</Command>
+		<Command name="_Информация_Очистить" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_Информация_Очистить</Action>
+		</Command>
+		<Command name="Отчеты_РазвернутьВсеГруппы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты развернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты развернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отчеты_РазвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отчеты_СвернутьВсеГруппы" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты свернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты свернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отчеты_СвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отчеты_СнятьВсеФлажки" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты снять все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты снять все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отчеты_СнятьВсеФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отчеты_ПроставитьВсеФлажки" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты проставить все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты проставить все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отчеты_ПроставитьВсеФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отчеты_Заполнить" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отчеты_Заполнить</Action>
+		</Command>
+		<Command name="Справочники_СнятьФлажки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справочники_СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Справочники_ПроставитьФлажки" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники проставить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники проставить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справочники_УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Справочники_Заполнить" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справочники_Заполнить</Action>
+		</Command>
+		<Command name="Справочники_СвернутьВсеГруппы" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники свернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники свернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справочники_СвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Справочники_РазвернутьВсеГруппы" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники развернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники развернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справочники_РазвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Документы_УстановитьФлажки" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Документы_УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Документы_СнятьФлажки" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Документы_СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Документы_Заполнить" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Документы_Заполнить</Action>
+		</Command>
+		<Command name="Документы_РазвернутьВсеГруппы" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы развернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Документы_РазвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Документы_СвернутьВсеГруппы" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы свернуть все группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы свернуть все группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Документы_СвернутьВсеГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Проверки_Заполнить" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверки заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверки_Заполнить</Action>
+		</Command>
+	</Commands>
+</Form>

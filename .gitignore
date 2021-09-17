@@ -7,7 +7,7 @@ allure/smoke/**
 allure/syntax-check/**
 base/**
 tests/smoke/**
-tools/epf/utils/**
+tools/epf/**
 
 !.gitkeep
 resetBranch.cmd
