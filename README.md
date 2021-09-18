@@ -198,6 +198,8 @@
 - `runSmoke.cmd` - запуск дымовых тестов
 - `runAllure.cmd` - формирование отчета Allure. Предусмотрено сохранение истории
 - `runTests.cmd` - запуск трех команд: runSyntax, runSmoke, runAllure
+- `compileEpf.cmd` -  cборка внешних обработок из исходников
+- `decompileEpf.cmd` -  разборка внешних обработок на исходники
 
 <a id="markdown-проверка-кода" name="#проверка-кода"></a>
 
