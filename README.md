@@ -62,7 +62,7 @@
 
 <a id="markdown-создание-проекта" name="#создание-проекта"></a>
 
-С версии `1.11.0` <a href="https://github.com/vanessa-opensource/add" target="_blank">vanessa-runner</a> доступна команда `init-project`.
+С версии `1.11.0` <a href="https://github.com/vanessa-opensource/vanessa-runner" target="_blank">vanessa-runner</a> доступна команда `init-project`.
 
 С ее помощью можно быстро развернуть проект с помощью следующих команд:
 
