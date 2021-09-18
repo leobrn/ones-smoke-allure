@@ -20,7 +20,6 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ОбщиеНастройки" id="102">
@@ -1353,6 +1352,17 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ЕстьИзмененияРасширениями" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Формы_КоличествоОбъектов" id="7">
@@ -1445,24 +1455,6 @@
 					</Type>
 				</Column>
 			</Columns>
-		</Attribute>
-		<Attribute name="РежимПроверки" id="11">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Режим проверки</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<Save>
-				<Field>РежимПроверки</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="Печать_ДеревоОбъектов" id="12">
 			<Title>
@@ -1590,6 +1582,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Была ошибка при формировании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияРасширениями" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения расширениями</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1735,6 +1738,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Была ошибка при формировании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияРасширениями" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения расширениями</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1904,6 +1918,17 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияРасширениями" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -2079,6 +2104,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ЕстьИзмененияРасширениями" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Документы_КоличествоОбъектов" id="17">
@@ -2098,20 +2134,6 @@
 			</Type>
 			<Save>
 				<Field>Документы_КоличествоОбъектов</Field>
-			</Save>
-		</Attribute>
-		<Attribute name="РежимыПроверки" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Режимы проверки</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-			<Save>
-				<Field>РежимыПроверки</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="ПроверятьФормы" id="4">
