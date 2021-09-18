@@ -16,6 +16,11 @@
 				<CommandName>Form.Command.Проверки_Заполнить</CommandName>
 				<ExtendedTooltip name="ФормаПроверки_ЗаполнитьРасширеннаяПодсказка" id="427"/>
 			</Button>
+			<Button name="ФормаОбъектыРасширенний" id="436">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбъектыРасширенний</CommandName>
+				<ExtendedTooltip name="ФормаОбъектыРасширеннийРасширеннаяПодсказка" id="437"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -212,15 +217,36 @@
 													<ChildItems>
 														<Table name="Формы_ДеревоОбъектов" id="3">
 															<Representation>Tree</Representation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<InitialTreeView>ExpandAllLevels</InitialTreeView>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>Формы_ДеревоОбъектов</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SelectAll</ExcludedCommand>
+																<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>CommandBar</SearchStringLocation>
 															<ContextMenu name="Формы_ДеревоОбъектовКонтекстноеМеню" id="4"/>
 															<AutoCommandBar name="Формы_ДеревоОбъектовКоманднаяПанель" id="5">
-																<Autofill>false</Autofill>
 																<ChildItems>
 																	<Button name="Формы_ДеревоОбъектовФормы_Заполнить" id="216">
 																		<Type>CommandBarButton</Type>
@@ -266,7 +292,7 @@
 																</ChildItems>
 															</AutoCommandBar>
 															<ExtendedTooltip name="Формы_ДеревоОбъектовРасширеннаяПодсказка" id="6"/>
-															<SearchStringAddition name="Формы_ДеревоОбъектовСтрокаПоиска" id="7">
+															<SearchStringAddition name="Формы_ДеревоОбъектовСтрокаПоиска" id="7" DisplayImportance="VeryHigh">
 																<AdditionSource>
 																	<Item>Формы_ДеревоОбъектов</Item>
 																	<Type>SearchStringRepresentation</Type>
@@ -417,12 +443,32 @@
 														<Table name="Отчеты_ДеревоОбъектов" id="235">
 															<Representation>Tree</Representation>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<SearchOnInput>Use</SearchOnInput>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Отчеты_ДеревоОбъектов</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SelectAll</ExcludedCommand>
+																<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>CommandBar</SearchStringLocation>
 															<ContextMenu name="Отчеты_ДеревоОбъектовКонтекстноеМеню" id="236"/>
 															<AutoCommandBar name="Отчеты_ДеревоОбъектовКоманднаяПанель" id="237">
-																<Autofill>false</Autofill>
 																<ChildItems>
 																	<Button name="ОтчетыКТестированиюОтчеты_Заполнить" id="278">
 																		<Type>CommandBarButton</Type>
@@ -506,6 +552,7 @@
 																</CheckBoxField>
 																<InputField name="Отчеты_ДеревоОбъектов_Представление" id="257">
 																	<DataPath>Отчеты_ДеревоОбъектов.Представление</DataPath>
+																	<ReadOnly>true</ReadOnly>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -584,6 +631,7 @@
 															<Representation>Tree</Representation>
 															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<SearchOnInput>Use</SearchOnInput>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<FileDragMode>AsFile</FileDragMode>
@@ -607,6 +655,7 @@
 																<ExcludedCommand>SortListDesc</ExcludedCommand>
 																<ExcludedCommand>Tree</ExcludedCommand>
 															</CommandSet>
+															<SearchStringLocation>CommandBar</SearchStringLocation>
 															<ContextMenu name="Печать_ДеревоОбъектовКонтекстноеМеню" id="165"/>
 															<AutoCommandBar name="Печать_ДеревоОбъектовКоманднаяПанель" id="166">
 																<ChildItems>
@@ -692,6 +741,7 @@
 																</CheckBoxField>
 																<InputField name="Печать_ДеревоОбъектов_Представление" id="207">
 																	<DataPath>Печать_ДеревоОбъектов.Представление</DataPath>
+																	<ReadOnly>true</ReadOnly>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -797,13 +847,35 @@
 													<ChildItems>
 														<Table name="Документы_ДеревоОбъектов" id="347">
 															<Representation>Tree</Representation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<SearchOnInput>Use</SearchOnInput>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Документы_ДеревоОбъектов</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SelectAll</ExcludedCommand>
+																<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>CommandBar</SearchStringLocation>
 															<ContextMenu name="Документы_ДеревоОбъектовКонтекстноеМеню" id="348"/>
 															<AutoCommandBar name="Документы_ДеревоОбъектовКоманднаяПанель" id="349">
-																<Autofill>false</Autofill>
 																<ChildItems>
 																	<Button name="Документы_Заполнить" id="400">
 																		<Type>CommandBarButton</Type>
@@ -895,6 +967,7 @@
 																	<ChildItems>
 																		<PictureField name="Документы_ДеревоОбъектов_Картинка" id="363">
 																			<DataPath>Документы_ДеревоОбъектов.Картинка</DataPath>
+																			<ReadOnly>true</ReadOnly>
 																			<TitleLocation>None</TitleLocation>
 																			<EditMode>EnterOnInput</EditMode>
 																			<ContextMenu name="Документы_ДеревоОбъектов_КартинкаКонтекстноеМеню" id="364"/>
@@ -902,6 +975,7 @@
 																		</PictureField>
 																		<InputField name="Документы_ДеревоОбъектов_Синоним" id="369">
 																			<DataPath>Документы_ДеревоОбъектов.Синоним</DataPath>
+																			<ReadOnly>true</ReadOnly>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
@@ -988,13 +1062,35 @@
 													<ChildItems>
 														<Table name="Справочники_ДеревоОбъектов" id="288">
 															<Representation>Tree</Representation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<SearchOnInput>Use</SearchOnInput>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Справочники_ДеревоОбъектов</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SelectAll</ExcludedCommand>
+																<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>CommandBar</SearchStringLocation>
 															<ContextMenu name="Справочники_ДеревоОбъектовКонтекстноеМеню" id="289"/>
 															<AutoCommandBar name="Справочники_ДеревоОбъектовКоманднаяПанель" id="290">
-																<Autofill>false</Autofill>
 																<ChildItems>
 																	<Button name="Справочники_Заполнить" id="339">
 																		<Type>CommandBarButton</Type>
@@ -1093,6 +1189,7 @@
 																	<ChildItems>
 																		<PictureField name="Справочники_ДеревоОбъектов_Картинка" id="304">
 																			<DataPath>Справочники_ДеревоОбъектов.Картинка</DataPath>
+																			<ReadOnly>true</ReadOnly>
 																			<TitleLocation>None</TitleLocation>
 																			<EditMode>EnterOnInput</EditMode>
 																			<ContextMenu name="Справочники_ДеревоОбъектов_КартинкаКонтекстноеМеню" id="305"/>
@@ -1100,6 +1197,7 @@
 																		</PictureField>
 																		<InputField name="Справочники_ДеревоОбъектов_Синоним" id="310">
 																			<DataPath>Справочники_ДеревоОбъектов.Синоним</DataPath>
+																			<ReadOnly>true</ReadOnly>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
@@ -1843,6 +1941,9 @@
 			<Type>
 				<v8:Type>v8:ValueTree</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>Справочники_ДеревоОбъектов.ПолноеИмя</Field>
+			</UseAlways>
 			<Save>
 				<Field>Справочники_ДеревоОбъектов</Field>
 			</Save>
@@ -2262,6 +2363,17 @@
 			<Save>
 				<Field>ПроверятьСправочники</Field>
 			</Save>
+		</Attribute>
+		<Attribute name="ТолькоОбъектыРасширений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только объекты расширений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -2768,6 +2880,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Проверки_Заполнить</Action>
+		</Command>
+		<Command name="ОбъектыРасширенний" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты расширенний</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты расширенний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбъектыРасширенний</Action>
 		</Command>
 	</Commands>
 </Form>
