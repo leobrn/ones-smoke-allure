@@ -14,7 +14,14 @@
             },
             "MissingReturnedValueDescription": false,
             "MissingParameterDescription": false,
-            "MissingVariablesDescription": false
+            "MissingVariablesDescription": false,
+            "CognitiveComplexity": {
+                "complexityThreshold": 35,
+                "checkModuleBody": true
+            },
+            "NestedStatements": {
+                "maxAllowedLevel": 6
+            }
         }
     },
     "traceLog": null,

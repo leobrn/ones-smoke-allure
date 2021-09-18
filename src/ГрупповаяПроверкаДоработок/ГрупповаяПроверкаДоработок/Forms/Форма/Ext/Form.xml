@@ -1171,13 +1171,13 @@
 						<Event name="Selection">Формы_ОшибкиВыбор</Event>
 					</Events>
 					<ChildItems>
-						<InputField name="_Информация_ПроверямыйОбъект" id="93">
-							<DataPath>_Информация.ПроверямыйОбъект</DataPath>
+						<InputField name="_Информация_ПроверяемыйОбъект" id="93">
+							<DataPath>_Информация.ПроверяемыйОбъект</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<CellHyperlink>true</CellHyperlink>
 							<TextEdit>false</TextEdit>
-							<ContextMenu name="_Информация_ПроверямыйОбъектКонтекстноеМеню" id="94"/>
-							<ExtendedTooltip name="_Информация_ПроверямыйОбъектРасширеннаяПодсказка" id="95"/>
+							<ContextMenu name="_Информация_ПроверяемыйОбъектКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="_Информация_ПроверяемыйОбъектРасширеннаяПодсказка" id="95"/>
 						</InputField>
 						<InputField name="_Информация_Данные" id="99">
 							<DataPath>_Информация.Данные</DataPath>
@@ -1398,11 +1398,11 @@
 				<Field>_Информация</Field>
 			</Save>
 			<Columns>
-				<Column name="ПроверямыйОбъект" id="1">
+				<Column name="ПроверяемыйОбъект" id="1">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проверямый объект</v8:content>
+							<v8:content>Проверяемый объект</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
