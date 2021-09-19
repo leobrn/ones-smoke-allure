@@ -1941,9 +1941,6 @@
 			<Type>
 				<v8:Type>v8:ValueTree</v8:Type>
 			</Type>
-			<UseAlways>
-				<Field>Справочники_ДеревоОбъектов.ПолноеИмя</Field>
-			</UseAlways>
 			<Save>
 				<Field>Справочники_ДеревоОбъектов</Field>
 			</Save>
