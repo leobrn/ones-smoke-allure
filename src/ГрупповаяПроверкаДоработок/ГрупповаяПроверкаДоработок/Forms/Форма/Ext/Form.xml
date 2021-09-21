@@ -1359,19 +1359,20 @@
 										<InputField name="ДеревоИнформацииТипОшибки" id="474">
 											<DataPath>ДеревоИнформации.ТипОшибки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
-											<ShowInHeader>false</ShowInHeader>
+											<Width>1</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<ContextMenu name="ДеревоИнформацииТипОшибкиКонтекстноеМеню" id="475"/>
 											<ExtendedTooltip name="ДеревоИнформацииТипОшибкиРасширеннаяПодсказка" id="476"/>
 										</InputField>
-										<InputField name="ДеревоИнформацииОписание" id="468">
-											<DataPath>ДеревоИнформации.Описание</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<MultiLine>true</MultiLine>
-											<ContextMenu name="ДеревоИнформацииОписаниеКонтекстноеМеню" id="469"/>
-											<ExtendedTooltip name="ДеревоИнформацииОписаниеРасширеннаяПодсказка" id="470"/>
-										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<InputField name="ДеревоИнформацииОписание" id="468">
+									<DataPath>ДеревоИнформации.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ДеревоИнформацииОписаниеКонтекстноеМеню" id="469"/>
+									<ExtendedTooltip name="ДеревоИнформацииОписаниеРасширеннаяПодсказка" id="470"/>
+								</InputField>
 								<InputField name="ДеревоИнформацииПроверяемыйОбъект" id="465">
 									<DataPath>ДеревоИнформации.ПроверяемыйОбъект</DataPath>
 									<ReadOnly>true</ReadOnly>
@@ -1382,9 +1383,12 @@
 								</InputField>
 								<InputField name="ДеревоИнформацииДанные" id="471">
 									<DataPath>ДеревоИнформации.Данные</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>false</ClearButton>
 									<OpenButton>true</OpenButton>
+									<TextEdit>false</TextEdit>
 									<ContextMenu name="ДеревоИнформацииДанныеКонтекстноеМеню" id="472"/>
 									<ExtendedTooltip name="ДеревоИнформацииДанныеРасширеннаяПодсказка" id="473"/>
 								</InputField>
@@ -1482,7 +1486,7 @@
 													<ContextMenu name="КаталогВыгрузкиAllureКонтекстноеМеню" id="450"/>
 													<ExtendedTooltip name="КаталогВыгрузкиAllureРасширеннаяПодсказка" id="451"/>
 													<Events>
-														<Event name="StartChoice">КаталогOutputAllureНачалоВыбора</Event>
+														<Event name="StartChoice">КаталогВыгрузкиАллюреНачалоВыбора</Event>
 													</Events>
 												</InputField>
 											</ChildItems>
@@ -2629,6 +2633,7 @@
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>ДеревоИнформацииТипОшибки</dcsset:field>
