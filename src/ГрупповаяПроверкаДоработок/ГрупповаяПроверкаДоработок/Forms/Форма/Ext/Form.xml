@@ -1268,7 +1268,6 @@
 							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<ContextMenu name="ДеревоИнформацииКонтекстноеМеню" id="453"/>
 							<AutoCommandBar name="ДеревоИнформацииКоманднаяПанель" id="454">
-								<Autofill>false</Autofill>
 								<ChildItems>
 									<Button name="ДеревоИнформацииВывестиСписок" id="477" DisplayImportance="VeryHigh">
 										<Type>CommandBarButton</Type>
