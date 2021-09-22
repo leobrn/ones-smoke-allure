@@ -167,7 +167,7 @@
 
  *За основу использовалась обработка с инфостарта <a href="https://infostart.ru/public/1056811/" target="_blank">Групповая проверка доработок</a>*.
 
- <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check.png" alt="Превью PhoenixBSL" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check.png" alt="Групповая проверка доработок" style="zoom:80%;" />
 
 5 режимов проверки:
 - Формы. Проверка открытия основных форм объектов
@@ -184,7 +184,7 @@
 - Нажать `Объекты расширений`. Будут выбраны объекты, которые добавлены или изменены в расширениях. Для показа только выбранных объектов нажмите `Только выбранные`
 - Запустить проверки нажав на `Проверить`
 
- <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-selected.png" alt="Превью PhoenixBSL" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-selected.png" alt="Выбранные объекты" style="zoom:80%;" />
 
 На странице `Результат` в виде дерева отображены ошибки с группировкой по полю `Тип ошибки`.
 
@@ -193,14 +193,14 @@
 - Проверяемый объект (имя объекта метаданных)
 - Данные (ссылка на объект в базе)
 
- <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-result.png" alt="Превью PhoenixBSL" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-result.png" alt="Результат проверки" style="zoom:80%;" />
 
 На странице `Настройки` доступны следующие настройки:
 
 - `Очистить даты запрета`. Перед проведением документов будут очищены даты запрета
 - `Формирование данных для отчета Allure`. Формировать отчет в формате Allure по результатам выполнения тестов. На данный момент выгружаются только ошибки
 
- <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-settings.png" alt="Превью PhoenixBSL" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-settings.png" alt="Настройки" style="zoom:80%;" />
 
 ## Синтаксическая проверка
 
