@@ -1780,9 +1780,7 @@
 							<v8:content>Данные</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="ТипОшибки" id="4">
 					<Title>
@@ -1929,9 +1927,7 @@
 							<v8:content>Объект печати</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="БылаОшибкаПриФормировании" id="9">
 					<Title>
@@ -1978,9 +1974,7 @@
 							<v8:content>Отчет вариант</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="Тестировать" id="2">
 					<Title>
@@ -2005,9 +1999,7 @@
 							<v8:content>Отчет владелец</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="Представление" id="4">
 					<Title>
@@ -2656,9 +2648,7 @@
 							<v8:content>Данные</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="ТипОшибки" id="4">
 					<Title>
