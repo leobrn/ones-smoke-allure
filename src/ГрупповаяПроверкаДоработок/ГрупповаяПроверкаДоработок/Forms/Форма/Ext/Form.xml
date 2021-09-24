@@ -1399,13 +1399,13 @@
 											<ContextMenu name="ДеревоИнформацииКартинкаКонтекстноеМеню" id="486"/>
 											<ExtendedTooltip name="ДеревоИнформацииКартинкаРасширеннаяПодсказка" id="487"/>
 										</PictureField>
-										<InputField name="ДеревоИнформацииТипОшибки" id="474">
-											<DataPath>ДеревоИнформации.ТипОшибки</DataPath>
+										<InputField name="ДеревоИнформацииРежимПроверки" id="474">
+											<DataPath>ДеревоИнформации.РежимПроверки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<Width>1</Width>
 											<AutoMaxWidth>false</AutoMaxWidth>
-											<ContextMenu name="ДеревоИнформацииТипОшибкиКонтекстноеМеню" id="475"/>
-											<ExtendedTooltip name="ДеревоИнформацииТипОшибкиРасширеннаяПодсказка" id="476"/>
+											<ContextMenu name="ДеревоИнформацииРежимПроверкиКонтекстноеМеню" id="475"/>
+											<ExtendedTooltip name="ДеревоИнформацииРежимПроверкиРасширеннаяПодсказка" id="476"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -1782,11 +1782,11 @@
 					</Title>
 					<Type/>
 				</Column>
-				<Column name="ТипОшибки" id="4">
+				<Column name="РежимПроверки" id="4">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип ошибки</v8:content>
+							<v8:content>Режим проверки</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1806,6 +1806,36 @@
 					</Title>
 					<Type>
 						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КраткоеОписание" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Краткое описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусАллюр" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус аллюр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
@@ -2650,11 +2680,11 @@
 					</Title>
 					<Type/>
 				</Column>
-				<Column name="ТипОшибки" id="4">
+				<Column name="РежимПроверки" id="4">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип ошибки</v8:content>
+							<v8:content>Режим проверки</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -2674,6 +2704,36 @@
 					</Title>
 					<Type>
 						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусАллюр" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус аллюр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КраткоеОписание" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Краткое описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
