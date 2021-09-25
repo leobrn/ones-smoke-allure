@@ -537,15 +537,6 @@
 																		</Picture>
 																		<ExtendedTooltip name="Отчеты_СнятьВсеФлажкиРасширеннаяПодсказка" id="285"/>
 																	</Button>
-																	<Button name="Отчеты_СвернутьВсеГруппы" id="280">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.Отчеты_СвернутьВсеГруппы</CommandName>
-																		<Picture>
-																			<xr:Ref>StdPicture.CollapseAll</xr:Ref>
-																			<xr:LoadTransparent>true</xr:LoadTransparent>
-																		</Picture>
-																		<ExtendedTooltip name="Отчеты_СвернутьВсеГруппыРасширеннаяПодсказка" id="281"/>
-																	</Button>
 																	<Button name="Отчеты_РазвернутьВсеГруппы" id="282">
 																		<Type>CommandBarButton</Type>
 																		<CommandName>Form.Command.Отчеты_РазвернутьВсеГруппы</CommandName>
@@ -554,6 +545,15 @@
 																			<xr:LoadTransparent>true</xr:LoadTransparent>
 																		</Picture>
 																		<ExtendedTooltip name="Отчеты_РазвернутьВсеГруппыРасширеннаяПодсказка" id="283"/>
+																	</Button>
+																	<Button name="Отчеты_СвернутьВсеГруппы" id="280">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.Отчеты_СвернутьВсеГруппы</CommandName>
+																		<Picture>
+																			<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+																			<xr:LoadTransparent>true</xr:LoadTransparent>
+																		</Picture>
+																		<ExtendedTooltip name="Отчеты_СвернутьВсеГруппыРасширеннаяПодсказка" id="281"/>
 																	</Button>
 																</ChildItems>
 															</AutoCommandBar>
