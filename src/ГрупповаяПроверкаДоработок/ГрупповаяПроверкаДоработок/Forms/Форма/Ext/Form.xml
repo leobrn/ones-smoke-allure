@@ -488,6 +488,7 @@
 															<Representation>Tree</Representation>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<SearchOnInput>Use</SearchOnInput>
+															<InitialTreeView>ExpandAllLevels</InitialTreeView>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Отчеты_ДеревоОбъектов</DataPath>
@@ -676,6 +677,7 @@
 															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<SearchOnInput>Use</SearchOnInput>
+															<InitialTreeView>ExpandAllLevels</InitialTreeView>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<FileDragMode>AsFile</FileDragMode>
@@ -895,6 +897,7 @@
 															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<SearchOnInput>Use</SearchOnInput>
+															<InitialTreeView>ExpandAllLevels</InitialTreeView>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Документы_ДеревоОбъектов</DataPath>
@@ -1110,6 +1113,7 @@
 															<ChangeRowOrder>false</ChangeRowOrder>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<SearchOnInput>Use</SearchOnInput>
+															<InitialTreeView>ExpandAllLevels</InitialTreeView>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
 															<DataPath>Справочники_ДеревоОбъектов</DataPath>

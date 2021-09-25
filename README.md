@@ -206,6 +206,12 @@
 
  <img src="https://raw.githubusercontent.com/leobrn/ones-smoke-allure/main/examples/group-check-settings.png" alt="Настройки" style="zoom:80%;" />
 
+Отчет `Allure`
+
+ <img src="examples\group-check-allure1.png" alt="Allure" style="zoom:80%;" />
+
+  <img src="examples\group-check-allure2.png" alt="Allure" style="zoom:80%;" />
+
 ## Синтаксическая проверка
 
 Кроме дымовых тестов, включена синтаксическая проверка расширений.
