@@ -8,6 +8,7 @@ allure/syntax-check/**
 base/**
 tests/smoke/**
 tools/epf/**
+src/cf/**
 
 !.gitkeep
 

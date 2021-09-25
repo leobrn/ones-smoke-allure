@@ -244,14 +244,16 @@
 
 ## Описание команд
 
-- `installVA.cmd` - обновление пакетов onescript, установка vanessa-runner и vanessa-add
+- `installVA.cmd` - обновление пакетов onescript, установка vanessa-runner, vanessa-add, vanessa-support
 - `replaceVA.cmd` - собирает обработки из исходников и делает замену обработок xddTestRunner.epf (из ветки develop), УправлениеДымовымиТестами и плагинов (из ветки develop) в корне библиотеки vanessa-add
 - `runSyntax.cmd` - запуск синтаксической проверки
 - `runSmoke.cmd` - запуск дымовых тестов
 - `runAllure.cmd` - формирование отчета Allure. Предусмотрено сохранение истории
 - `runTests.cmd` - запуск трех команд: runSyntax, runSmoke, runAllure
 - `compileEpf.cmd` -  cборка внешних обработок из исходников
-- `decompileEpf.cmd` -  разборка внешних обработок на исходники
+- `decompileEpf.cmd` - разборка внешних обработок на исходники
+- `decompileCf.cmd` -  разборка конфигурации в исходники
+- `getSupportObjects.cmd` - получить json-файл для всех метаданных, которые могут быть изменены и не находятся в режиме чтения
 
 <a id="markdown-проверка-кода" name="#проверка-кода"></a>
 
