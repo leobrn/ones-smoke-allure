@@ -413,6 +413,25 @@
 																		</InputField>
 																	</ChildItems>
 																</ColumnGroup>
+																<CheckBoxField name="ОткрытиеФорм_ДеревоОбъектовЕстьИзмененияПоддержки" id="499">
+																	<DataPath>Формы_ДеревоОбъектов.ЕстьИзмененияПоддержки</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Есть изменения поддержки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderPicture>
+																		<xr:Ref>StdPicture.Change</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</HeaderPicture>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ОткрытиеФорм_ДеревоОбъектовЕстьИзмененияПоддержкиКонтекстноеМеню" id="500"/>
+																	<ExtendedTooltip name="ОткрытиеФорм_ДеревоОбъектовЕстьИзмененияПоддержкиРасширеннаяПодсказка" id="501"/>
+																</CheckBoxField>
 																<InputField name="ОткрытиеФорм_ДеревоОбъектовПараметрыФормы" id="48">
 																	<DataPath>Формы_ДеревоОбъектов.ПараметрыФормы</DataPath>
 																	<Visible>false</Visible>
@@ -608,6 +627,25 @@
 																	<ContextMenu name="Отчеты_ДеревоОбъектов_ПредставлениеКонтекстноеМеню" id="258"/>
 																	<ExtendedTooltip name="Отчеты_ДеревоОбъектов_ПредставлениеРасширеннаяПодсказка" id="259"/>
 																</InputField>
+																<CheckBoxField name="Отчеты_ДеревоОбъектовЕстьИзмененияПоддержки" id="502">
+																	<DataPath>Отчеты_ДеревоОбъектов.ЕстьИзмененияПоддержки</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Есть изменения поддержки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderPicture>
+																		<xr:Ref>StdPicture.Change</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</HeaderPicture>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="Отчеты_ДеревоОбъектовЕстьИзмененияПоддержкиКонтекстноеМеню" id="503"/>
+																	<ExtendedTooltip name="Отчеты_ДеревоОбъектовЕстьИзмененияПоддержкиРасширеннаяПодсказка" id="504"/>
+																</CheckBoxField>
 															</ChildItems>
 														</Table>
 													</ChildItems>
@@ -813,6 +851,19 @@
 																		<Event name="OnChange">ПечатныеФормыКТестированиюОбъектПечатиПриИзменении</Event>
 																	</Events>
 																</InputField>
+																<CheckBoxField name="Печать_ДеревоОбъектовЕстьИзмененияПоддержки" id="505">
+																	<DataPath>Печать_ДеревоОбъектов.ЕстьИзмененияПоддержки</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleLocation>None</TitleLocation>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderPicture>
+																		<xr:Ref>StdPicture.Change</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</HeaderPicture>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="Печать_ДеревоОбъектовЕстьИзмененияПоддержкиКонтекстноеМеню" id="506"/>
+																	<ExtendedTooltip name="Печать_ДеревоОбъектовЕстьИзмененияПоддержкиРасширеннаяПодсказка" id="507"/>
+																</CheckBoxField>
 															</ChildItems>
 														</Table>
 													</ChildItems>
@@ -1035,6 +1086,19 @@
 																		</InputField>
 																	</ChildItems>
 																</ColumnGroup>
+																<CheckBoxField name="Документы_ДеревоОбъектовЕстьИзмененияПоддержки" id="508">
+																	<DataPath>Документы_ДеревоОбъектов.ЕстьИзмененияПоддержки</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleLocation>None</TitleLocation>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderPicture>
+																		<xr:Ref>StdPicture.Change</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</HeaderPicture>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="Документы_ДеревоОбъектовЕстьИзмененияПоддержкиКонтекстноеМеню" id="509"/>
+																	<ExtendedTooltip name="Документы_ДеревоОбъектовЕстьИзмененияПоддержкиРасширеннаяПодсказка" id="510"/>
+																</CheckBoxField>
 															</ChildItems>
 														</Table>
 													</ChildItems>
@@ -1258,6 +1322,25 @@
 																		</InputField>
 																	</ChildItems>
 																</ColumnGroup>
+																<CheckBoxField name="Справочники_ДеревоОбъектовЕстьИзмененияПоддержки" id="511">
+																	<DataPath>Справочники_ДеревоОбъектов.ЕстьИзмененияПоддержки</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Есть изменения поддержки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderPicture>
+																		<xr:Ref>StdPicture.Change</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</HeaderPicture>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="Справочники_ДеревоОбъектовЕстьИзмененияПоддержкиКонтекстноеМеню" id="512"/>
+																	<ExtendedTooltip name="Справочники_ДеревоОбъектовЕстьИзмененияПоддержкиРасширеннаяПодсказка" id="513"/>
+																</CheckBoxField>
 															</ChildItems>
 														</Table>
 													</ChildItems>
@@ -1556,6 +1639,23 @@
 							<ContextMenu name="ОчиститьДатыЗапретаКонтекстноеМеню" id="489"/>
 							<ExtendedTooltip name="ОчиститьДатыЗапретаРасширеннаяПодсказка" id="490"/>
 						</CheckBoxField>
+						<InputField name="ФайлИнформацияПоддержки" id="514">
+							<DataPath>ФайлИнформацияПоддержки</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Json-файл для всех метаданных, которые могут быть изменены и не находятся в режиме чтения (https://github.com/vanessa-opensource/vanessa-support)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ФайлИнформацияПоддержкиКонтекстноеМеню" id="515"/>
+							<ExtendedTooltip name="ФайлИнформацияПоддержкиРасширеннаяПодсказка" id="516"/>
+							<Events>
+								<Event name="StartChoice">ФайлИнформацияПоддержкиНачалоВыбора</Event>
+							</Events>
+						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1706,6 +1806,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияПоддержки" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения поддержки</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1985,6 +2096,17 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ЕстьИзмененияПоддержки" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения поддержки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Отчеты_ДеревоОбъектов" id="13">
@@ -2131,6 +2253,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияПоддержки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения поддержки</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -2307,6 +2440,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияПоддержки" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения поддержки</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -2491,6 +2635,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Есть изменения расширениями</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияПоддержки" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения поддержки</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -2752,6 +2907,9 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<Save>
+				<Field>ОчиститьДатыЗапрета</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="ТолькоВыбранные" id="21">
 			<Title>
@@ -2763,6 +2921,24 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ФайлИнформацияПоддержки" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл с информацией о поддержке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ФайлИнформацияПоддержки</Field>
+			</Save>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
