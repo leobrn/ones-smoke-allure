@@ -2940,6 +2940,49 @@
 				<Field>ФайлИнформацияПоддержки</Field>
 			</Save>
 		</Attribute>
+		<Attribute name="ДанныеПоддержки" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные поддержки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Класс" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Класс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Объект" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -2957,6 +3000,9 @@
 					</dcsset:item>
 					<dcsset:item>
 						<dcsset:field>ОткрытиеФорм_ДеревоОбъектовПараметрыФормы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОткрытиеФорм_ДеревоОбъектовЕстьИзмененияПоддержки</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
@@ -2993,6 +3039,9 @@
 					</dcsset:item>
 					<dcsset:item>
 						<dcsset:field>Отчеты_ДеревоОбъектов_Представление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Отчеты_ДеревоОбъектовЕстьИзмененияПоддержки</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
@@ -3033,6 +3082,9 @@
 					<dcsset:item>
 						<dcsset:field>Печать_ДеревоОбъектов_Представление</dcsset:field>
 					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Печать_ДеревоОбъектовЕстьИзмененияПоддержки</dcsset:field>
+					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemGroup">
@@ -3072,6 +3124,9 @@
 					<dcsset:item>
 						<dcsset:field>Документы_ДеревоОбъектов_Синоним</dcsset:field>
 					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Документы_ДеревоОбъектовЕстьИзмененияПоддержки</dcsset:field>
+					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemGroup">
@@ -3110,6 +3165,9 @@
 					</dcsset:item>
 					<dcsset:item>
 						<dcsset:field>Справочники_ДеревоОбъектов_Синоним</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Справочники_ДеревоОбъектовЕстьИзмененияПоддержки</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
