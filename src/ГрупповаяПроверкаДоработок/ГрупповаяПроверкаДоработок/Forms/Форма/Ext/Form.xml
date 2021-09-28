@@ -21,6 +21,11 @@
 				<CommandName>Form.Command.ОбъектыРасширенний</CommandName>
 				<ExtendedTooltip name="ФормаОбъектыРасширеннийРасширеннаяПодсказка" id="437"/>
 			</Button>
+			<Button name="ФормаОбъектыИзмененные" id="517">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбъектыИзмененные</CommandName>
+				<ExtendedTooltip name="ФормаОбъектыИзмененныеРасширеннаяПодсказка" id="518"/>
+			</Button>
 			<Button name="ФормаПоказатьТолькоВыбранные" id="497">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПоказатьТолькоВыбранные</CommandName>
@@ -3742,6 +3747,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьТолькоВыбранные</Action>
+		</Command>
+		<Command name="ОбъектыИзмененные" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты измененные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбъектыИзмененные</Action>
 		</Command>
 	</Commands>
 </Form>
