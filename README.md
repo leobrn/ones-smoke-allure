@@ -2,7 +2,11 @@
 
 Сборка создана для инструмента <a href="https://github.com/vanessa-opensource/add" target="_blank">Vanessa-ADD</a>.
 
-Доработан инструмент по управлению дымовыми тестами, изменен ряд тестов. <a href="https://youtu.be/NzB2dIhH08s" target="_blank">Демонстрация</a>
+Доработан инструмент по управлению дымовыми тестами, изменен ряд тестов. 
+
+Видео примеры:
+- <a href="https://youtu.be/NzB2dIhH08s" target="_blank">VanessaADD. Дымовые тесты для 1С и вывод результата в отчет Allure. Проверяем доработки в расширение</a>
+- <a href="https://youtu.be/hVGjl_lW4Pg" target="_blank">VanessaRunner. Проверяем доработки после обновления с помощью внешней обработки</a>
 
 [![telegram](https://img.shields.io/badge/telegram-chat-green.svg)](http://t.me/ovmst)
 
