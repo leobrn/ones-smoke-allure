@@ -3,6 +3,7 @@
 [![telegram](https://img.shields.io/badge/telegram-chat-green.svg)](http://t.me/ovmst)
 [![Stars](https://img.shields.io/github/stars/leobrn/ones-smoke-allure.svg?label=Github%20%E2%98%85&a)](https://github.com/leobrn/ones-smoke-allure/stargazers)
 [![Release](https://img.shields.io/github/v/release/leobrn/ones-smoke-allure?include_prereleases&label=last%20release&style=badge)](https://github.com/leobrn/ones-smoke-allure/releases/latest)
+[![download](https://img.shields.io/github/downloads/leobrn/ones-smoke-allure/total)](https://github.com/leobrn/ones-smoke-allure/releases/latest/download/GruppovayaProverkaDorabotok.epf)
 [![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.neocities.org/badges/2/394873279.json)](https://openyellow.notion.site/openyellow/24727888daa641af95514b46bee4d6f2?p=33af15f9239e4482aa84b084d8d3734e&amp;pm=s)
 
 Видео примеры:
